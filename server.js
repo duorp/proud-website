@@ -109,7 +109,6 @@ app.get("/index", (req, res) => {
 
 
 //admin
-
 // Homepage route
 app.get("/admin/projects", (req, res) => {
   res.render("admin/projects", {
