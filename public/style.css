@@ -255,6 +255,11 @@ section {
 .card__image:hover .card__overlay {
   opacity: 1;
 }
+@media (max-width: 768px) {
+  .card__image:hover .card__overlay {
+    opacity: 0;
+  }
+}
 
 
 .main-content {
@@ -492,8 +497,21 @@ height: auto;
 }
 
 @media (max-width: 768px) {
-  .project-index h2 {
-    font-size: 1.5rem;
+  .project-index .card {
+    gap: 1rem;
+    padding: 1rem 0rem;
   }
+
+  .project-index .card__image{
+    width: 100px;
+  }
+.project-index h2 {
+  font-size: 1rem;
+}
+
+.project-index .card__tags{
+display: none
+}
   
 }
+
