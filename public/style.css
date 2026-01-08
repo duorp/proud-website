@@ -16,6 +16,7 @@
   --font-weight-bold: 700;
   --black: #0D0D0D;
   --white: #F9F9FF;
+  --max-width: 1920px;
 }
 
 /* Chrome, Edge, Safari */
@@ -77,6 +78,13 @@ ol {
 }
 
 /*custom css */
+
+hr {
+  border: none;
+  border-bottom: 1px solid var(--black);
+  max-width: var(--max-width); 
+  width: 100%;
+}
 a {
   text-decoration: none;
   color: inherit;
@@ -430,8 +438,7 @@ object-fit: contain;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-bottom: 1px solid var(--black);
-  box-sizing: border-box;
+
   background-color: var(--white);
 }
 
