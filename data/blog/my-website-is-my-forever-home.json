@@ -1,0 +1,10 @@
+{
+  "title": "Abortion Infographic",
+  "headline": "A seven-foot long infographic poster about abortion rights in a post-Roe v. Wade America.",
+  "description": "Since the overturning of Roe v. Wade, 20 million women have lost access to nearly all abortion services due to state level restrictions, and new trigger laws will cause that number to grow. Through scraping the internet for personal accounts of individuals who have gotten abortions, my poster aims to highlight abortion rights as a complex human issue.",
+  "hero_image": "/images/abortion-infographic-hero.jpg",
+  "tags": ["Data", "Editorial"],
+  "blocks": [
+    { "type": "text", "content": "test" }
+  ]
+}

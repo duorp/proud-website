@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="/style.css">
+<script type="module" src="/js/main.js" defer></script>
+</head>
+  <%- include("partials/header") %>
+<body>
+<section class="main-content" id="landing">
+
+  <p>Welcome to my portfolio website</p>
+</section>
+<main class="main-content">
+<section id="navigation">
+<ul>
+  <li>Design</li>
+  <li>Code</li>
+  <li>Experiments</li>
+  <a href="/index"><li>Everything</li></a>
+</ul>
+<p>small short description</p>
+</section>
+  <section class="grid">
+  <% projects.forEach(p => { %>
+    <article class="card card--<%= p.span %>" >
+    <a href="/<%= p.type %>/<%= p.slug %>">
+      <div
+        class="card__image"
+        style="--ratio: <%= p.ratio %>;"
+      >
+        <div class="card__overlay" <% if (p.type ==='b') { %>style="opacity: 1;"<% } %> >
+          <h2><%= p.subtitle %></h2>
+        </div>
+        <img src="\images\<%= p.slug %>.jpg"  onerror="this.onerror=null; this.src='/images/godfrey-dadich.gif';">
+      </div>
+    </a>
+
+      <h3><%= p.title %></h3>
+      <div class="card__tags">
+        <a href=/index><% p.tags.forEach((tag, i) => { %>
+          <span class="tag"><%= tag %></span>
+        <% }) %>
+        </a>
+      </div>
+    </article>
+  <% }) %>
+</section>
+</main>
+
+  <%- include("partials/footer") %>
+</body>
+</html>

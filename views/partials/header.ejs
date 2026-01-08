@@ -1,0 +1,25 @@
+<header>
+    <nav id="navbar">
+            <div class="logo">
+                <a href="/">website</a>
+            </div>
+            <div id="hamburger-menu-icon">
+            </div>
+    </nav>
+    <div id="hamburger-menu">
+        <ul>
+  <li>Section One</li>
+  <li>Section Two</li>
+  <li>Section Three</li>
+  <li>Section Four</li>
+</ul>
+    </div>
+</header>
+<script>
+    const target = document.getElementById('hamburger-menu');
+    const button = document.getElementById('hamburger-menu-icon');
+
+    button.addEventListener('click', () => {
+        target.classList.toggle('toggled  ');
+    });
+</script>

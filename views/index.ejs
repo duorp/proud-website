@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <link rel="stylesheet" href="/style.css">
+    <script type="module" src="/js/main.js" defer></script>
+</head>
+<body>
+    <%- include('partials/header') %>
+<main class="main-content" id="index">
+    <section id="tags-container">
+        <% tags.forEach(tag => { %>
+            <div class="tag"><%= tag %></div>
+        <% }) %>
+    </section>
+<section class="project-index">
+  <% projects.forEach(p => { %>
+    <article class="card" >
+    <a href="/<%= p.type %>/<%= p.slug %>">
+      <div
+        class="card__image"
+        style="--ratio: 16/9;"
+      >
+        <img src="\images\<%= p.slug %>.jpg"  onerror="this.onerror=null; this.src='/images/godfrey-dadich.gif';">
+      </div>
+    </a>
+
+      <h2><%= p.title %></h2>
+      <div class="card__tags">
+        <a href=/index><% p.tags.forEach((tag, i) => { %>
+          <span class="tag"><%= tag %></span>
+        <% }) %>
+        </a>
+      </div>
+    </article>
+  <% }) %>
+</section>
+</main>
+    <%- include('partials/footer') %>
+</body>
+
+</html>
+
