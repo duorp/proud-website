@@ -11,7 +11,7 @@
     <%- include('partials/header') %>
 
     <main class="main-content project-page">
-      <section class="project-hero">
+      <section class="project-page__hero">
         <h2><%= project.headline %></h2>
         <p><%- project.description %></p>
                <div class="card__tags">
@@ -20,21 +20,44 @@
         <% }) %>
       </div>
         </section>
-        <section>
-<% project.blocks.forEach(block => { %>
-  <% if (block.type === "text") { %>
-    <p><%= block.content %></p>
-  <% } else if (block.type === "image") { %>
-    <img src="<%= block.src %>" alt="<%= block.alt %>">
-  <% } else if (block.type === "custom") { %>
-    <div class="custom-block">
-      <%- block.content %>
-    </div>
-  <% } %>
-<% }); %>
+<section class="project-page">
+  <% project.blocks.forEach(block => { %>
 
+    <% /* TEXT BLOCK */ %>
+    <% if (block.type === "text") { %>
+      <p class="block block--text">
+        <%= block.content %>
+      </p>
+    <% } %>
 
-        </section>
+    <% /* IMAGE GROUP BLOCK */ %>
+    <% if (block.type === "image") { %>
+      <% 
+        let sizeClass = "image--medium";
+        if (block.size === "small") sizeClass = "image--small";
+        if (block.size === "large") sizeClass = "image--large";
+      %>
+
+      <div class="block <%= sizeClass %>">
+        <% block.images.forEach(img => { %>
+          <img
+            src="<%= img.src %>"
+            style="flex-grow: <%= img.grow || 1 %>;"
+            loading="lazy"
+          >
+        <% }) %>
+      </div>
+    <% } %>
+
+    <% /* CUSTOM HTML BLOCK */ %>
+    <% if (block.type === "custom") { %>
+      <div class="block--custom">
+        <%- block.content %>
+      </div>
+    <% } %>
+
+  <% }) %>
+</section>
         
     </main>
 

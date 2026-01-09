@@ -379,16 +379,6 @@ z-index: 3;
 
     /* projects page */
 
-.project-hero h2 {
-  flex: 3;
-  max-width: 900px;
-}
-
-.project-hero p {
-  flex: 2;
-  max-width: 900px;
-
-}
 
 .project-hero .card__tags{
 flex: 1;
@@ -398,24 +388,60 @@ display: flex;
 }
 
 .project-page {
+  display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
-.project-hero {
+.project-page__hero {
   display: flex;
+  flex-direction: column;
   width: 100%;
   justify-content:left;
   align-items: flex-start;
-  gap: 2rem;
+  gap: 1rem;
+  max-width: 800px;
 }
 
-@media (max-width: 768px) {
-  .project-hero {
-    flex-direction: column;
-    gap: 1rem;
-  }
+.project-page p {
+  font-size: 1.25rem;
+  line-height: 150%;
+  max-width: 800px;
+}  
+
+.block {
+  width: 100%;
+  margin: 2rem 0;
+  max-width: 800px;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
 }
 
+.block img {
+  flex: 1 1 0;
+  width: 100%;
+  min-width: 0;
+  height: auto;
+  display: block;
+}
+
+.image--small {
+  max-width: 800px;
+}
+
+.image--medium {
+  max-width: 1200px;
+}
+
+.image--large {
+  max-width: 1600px;
+}
+
+.block--custom {
+  width: 100%;
+  max-width: none;
+}
 
 /* one offs */
 #poster-tile {
