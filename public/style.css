@@ -1,3 +1,6 @@
+svg * {
+  pointer-events: all; /* or leave alone */
+}
 :root {
   --font-body: 'Oracle', sans-serif;
   --font-heading: 'Oracle', sans-serif;
@@ -412,11 +415,18 @@ display: flex;
 .block {
   width: 100%;
   margin: 2rem 0;
-  max-width: 800px;
   display: flex;
   flex-direction: row;
   gap: 1rem;
 }
+
+@media (max-width: 768px) {
+  .block {
+    flex-direction: column;
+  }
+}
+
+
 
 .block img {
   flex: 1 1 0;
@@ -438,11 +448,6 @@ display: flex;
   max-width: 1600px;
 }
 
-.block--custom {
-  width: 100%;
-  max-width: none;
-}
-
 /* one offs */
 #poster-tile {
   height: 75vh;
@@ -461,6 +466,7 @@ max-width: none;
 object-fit: contain;
 }
 
+
 /* landing */
 #landing {
   width: 100%;
@@ -472,6 +478,49 @@ object-fit: contain;
 
   background-color: var(--white);
 }
+
+
+.tooltip {
+  position: fixed;
+  pointer-events: none; /* allow mouse through */
+  background-color: #FFF5E5;
+  color: #878787;
+  font-size: 0.9rem;
+  padding: 10px;
+  line-height: 1.2;
+  border-radius: 4px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  z-index: 1000;
+  visibility: hidden;
+  max-width: 300px;
+  max-height: 300px;
+  overflow: hidden;
+}
+
+
+.tooltip div {
+  line-height: 1.2;
+}
+
+
+circle {
+  cursor: pointer;
+}
+
+rect.married {
+  stroke: #ccc;
+  stroke-width: 1px;
+}
+
+path {
+  stroke: none;
+}
+
+.hitbox {
+  pointer-events: all;   /* Make sure the rectangle captures mouse events */
+  z-index: 10;
+}
+
 
 /* index*/
 #index {

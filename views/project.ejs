@@ -6,9 +6,13 @@
     <title><%= project.title %></title>
     <link rel="stylesheet" href="/style.css">
     <script src="https://unpkg.com/@panzoom/panzoom/dist/panzoom.min.js"></script>
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script src="/js/storyGrid.js"></script>
 </head>
 <body>
+  
     <%- include('partials/header') %>
+    
 
     <main class="main-content project-page">
       <section class="project-page__hero">
@@ -63,7 +67,11 @@
 
     <%- include('partials/footer') %>
 </body>
-<script>
+<script >
+
+
+
+
   const elem = document.getElementById('poster-tile')
 const panzoom = Panzoom(elem, {
 
@@ -82,3 +90,14 @@ elem.parentElement.addEventListener('wheel', panzoom.zoomWithWheel)
 </script>
 </html>
 
+<script>
+  // Adjust container selector and width as needed
+  const container = "#story-grid";
+  const chartWidth = 600;
+
+  d3.json("/images/capstonedatasetfinal.json")
+    .then(data => {
+      renderStoryGrid(container, data, chartWidth);
+    })
+    .catch(err => console.error("Failed to load JSON:", err));
+</script>
