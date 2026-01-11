@@ -8,31 +8,51 @@
     "Editorial"
   ],
   "blocks": [
-    {
+      {
       "type": "text",
-      "content": "Story Quilt\r\nThe story quilt is a double sided quilt that features 12 abortion stories from all over North America. The visualization categorizes stories by marriage status, age, and abortion method. Stories corresponding to each quilted block is printed on the other side of the quilt."
+      "content": "<span class=\"eyebrow\">Story Quilt</span>\r\nThe story quilt is a double sided quilt that features 12 abortion stories from all over North America. The visualization categorizes stories by marriage status, age, and abortion method. Stories corresponding to each quilted block is printed on the other side of the quilt."
     },
-    { "type": "custom",
+       { "type": "custom",
   "content" :"PGRpdiBjbGFzcz0iYmxvY2siIHN0eWxlPSJtYXgtd2lkdGg6IDEyMDBweDsiPgogIDxkaXYgaWQ9InN0b3J5LWdyaWQiPjwvZGl2PgogIDxpbWcgc3JjPSIvaW1hZ2VzL0wxMDUwNTIwLmpwZyIgc3R5bGU9ImZsZXgtZ3JvdzogMTsiIGxvYWRpbmc9ImxhenkiPgo8L2Rpdj4KCjxzY3JpcHQgc3JjPSJodHRwczovL2QzanMub3JnL2QzLnY3Lm1pbi5qcyI+PC9zY3JpcHQ+CjxzY3JpcHQgc3JjPSIvanMvc3RvcnktcXVpbHQuanMiPjwvc2NyaXB0Pgo8c2NyaXB0PgpkMy5qc29uKCI8JT0gcHJvamVjdC5kYXRhc2V0UGF0aCAlPiIpLnRoZW4oZGF0YSA9PiB7CgogIGZ1bmN0aW9uIGRyYXdHcmlkKCkgewogICAgY29uc3QgY29udGFpbmVyID0gZDMuc2VsZWN0KCIjc3RvcnktZ3JpZCIpLm5vZGUoKTsKICAgIGNvbnN0IHdpZHRoID0gY29udGFpbmVyLmdldEJvdW5kaW5nQ2xpZW50UmVjdCgpLndpZHRoOyAvLyBjb250YWluZXIgd2lkdGggaW4gcHgKICAgIGNvbnN0IGJveFNpemUgPSB3aWR0aCAvIDI7IC8vIGJveCBzaXplIHNjYWxlcyB3aXRoIGNvbnRhaW5lcgogICAgcmVuZGVyU3RvcnlHcmlkKCIjc3RvcnktZ3JpZCIsIGRhdGEsIHdpZHRoLCBib3hTaXplKTsKICB9CgogIGRyYXdHcmlkKCk7CiAgd2luZG93LmFkZEV2ZW50TGlzdGVuZXIoInJlc2l6ZSIsIGRyYXdHcmlkKTsgLy8gYXV0b21hdGljYWxseSByZWRyYXcgb24gcmVzaXplCn0pOwo8L3NjcmlwdD4="
     },
     {
       "type": "text",
-      "content": "Story Vest\r\nA counterpart to the story quilt is the Story Vest, which is a reversible vest created using a similar process. The vest highlights 36 abortion stories, with the corresponding narratives printed on the inside. "
+      "content": "<span class=\"eyebrow\">Story Vest</span>\r\nA counterpart to the story quilt is the Story Vest, which is a reversible vest created using a similar process. The vest highlights 36 abortion stories, with the corresponding narratives printed on the inside. "
+    },
+        {
+      "type": "image",
+      "images": [
+        {
+          "src": "/images/story-vest.jpg",
+          "grow": "2"
+        },
+        {
+          "src": "/images/story-vest.png",
+          "grow": "1"
+        }
+      ]
     },
     {
       "type": "text",
-      "content": "Desert Scarf\r\nAbortion restrictions can make it impossible for clinics to stay open in many parts of the United States. As of 2017, A study has identified 27 “abortion deserts” in the country: cities with populations of over 100,000 where people must travel more than 100 miles to reach a clinic. The Desert Scarf visualizes the distances women will have to travel to access abortion procedures, and how that distance will increase with the overturning of Roe V. Wade. "
+      "content": "<span class=\"eyebrow\">Desert Scarf</span>\r\nAbortion restrictions can make it impossible for clinics to stay open in many parts of the United States. As of 2017, A study has identified 27 “abortion deserts” in the country: cities with populations of over 100,000 where people must travel more than 100 miles to reach a clinic. The Desert Scarf visualizes the distances women will have to travel to access abortion procedures, and how that distance will increase with the overturning of Roe V. Wade. "
     },
+   
+ 
+    
     {
       "type": "image",
       "images": [
         {
-          "src": "/images/abortion-infographic.jpg",
-          "grow": "1"
+          "src": "/images/scarf-1.jpg",
+          "grow": "2"
         },
         {
-          "src": "/images/abortion-infographic.jpg",
+          "src": "/images/scarf-2.jpg",
           "grow": "2"
+        },
+          {
+          "src": "/images/scarf-map.png",
+          "grow": "1"
         }
       ]
     }

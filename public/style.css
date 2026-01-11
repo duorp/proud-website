@@ -116,6 +116,15 @@ h4 a {
   text-decoration: underline;
   color: inherit;
 }
+
+.eyebrow {
+  font-family: "Oracle","Replica Std";
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 110%;
+  text-transform: uppercase;
+  color: var(--black);
+}
 /*fonts*/
 
 
@@ -432,6 +441,7 @@ display: flex;
   display: flex;
   flex-direction: row;
   gap: 1rem;
+  align-items: flex-start;
 }
 
 @media (max-width: 768px) {
@@ -503,8 +513,8 @@ display: flex;
   }
 }
 
-.block--custom {
-  max-width: 100%;
+.block--text {
+  flex-direction:column;
 }
 
 /* one offs */
