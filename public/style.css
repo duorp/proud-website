@@ -503,6 +503,10 @@ display: flex;
   }
 }
 
+.block--custom {
+  max-width: 100%;
+}
+
 /* one offs */
 #poster-tile {
   height: 75vh;
