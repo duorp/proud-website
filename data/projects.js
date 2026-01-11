@@ -17,15 +17,6 @@ module.exports = [
     ratio: "4/3",
         tags: ["Editorial", "Brand","UX"]
   },
-    {
-    type: "b",
-    slug: "my-website-is-my-forever-home",
-    title: "My Website is My Forever Home",
-        subtitle: "laying the right foundation for my digital home, this time for the long haul.",
-    span: "medium",
-    ratio: "4/3",
-        tags: ["Writing"]
-  },
 
     {
     type: "p",
