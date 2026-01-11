@@ -3,7 +3,7 @@ module.exports = [
     type: "p",
     slug: "abortion-infographic",
     title: "Abortion Infographic",
-    subtitle: "Subheading",
+    subtitle: "A seven-foot long infographic poster about abortion rights in a post-Roe v. Wade America.",
     span: "large",
     ratio: "16/9",
     tags: ["Data", "Editorial"]

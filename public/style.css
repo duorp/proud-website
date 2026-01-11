@@ -102,6 +102,20 @@ html {
   letter-spacing: -0.02em;
 }
 
+h4 {
+  font-family: "Oracle","Replica Std";
+  font-weight: 300;
+  font-size: 0.875rem;
+  line-height: 110%;
+  color: var(--black);
+  opacity: 0.7;
+  margin-top: 8px;
+}
+
+h4 a {
+  text-decoration: underline;
+  color: inherit;
+}
 /*fonts*/
 
 
@@ -446,6 +460,47 @@ display: flex;
 
 .image--large {
   max-width: 1600px;
+}
+
+/* responsive gallery */
+
+.block--gallery {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+ 
+}
+
+/* Create four equal columns that sits next to each other */
+.gallery__column {
+  flex: 1;
+  padding: 0 4px;
+}
+
+.gallery__column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.gallery__item {
+  padding-bottom: 1rem;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .gallery__column {
+    flex: 100%;
+    max-width: 100%;
+  }
 }
 
 /* one offs */
