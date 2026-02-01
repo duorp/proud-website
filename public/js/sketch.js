@@ -128,8 +128,6 @@ function drawBackground() {
   fill(0); // BLACK text
   noStroke();
   textAlign(LEFT, CENTER);
-  let scaleBase = min(width, height);
-
   if (width <= 768) {
     // 📱 Mobile font sizing
     textSize(40);          // pick a readable fixed size
@@ -159,10 +157,19 @@ function drawScene() {
 
   push();
   fill(c[0], c[1], c[2]); 
-  //fill(180)
   noStroke();
   textAlign(LEFT, CENTER);
-
+  if (width <= 768) {
+    // 📱 Mobile font sizing
+    textSize(40);          // pick a readable fixed size
+    textLeading(43);
+  } else {
+    // 🖥 Desktop scaling
+    let scaleBase = min(width, height);
+    let ts = constrain(scaleBase * 0.12, 18, 48);
+    textSize(ts);
+    textLeading(ts * 1.1);
+  }
  
   text(
     fontReady ? "Proud Taranat is a visual designer. Her work ranges from web, branding, editorial, and creative computation. She is passionate about telling human stories rooted in data." : "Loading font...",
