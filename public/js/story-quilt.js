@@ -127,3 +127,13 @@ const hitboxes = svg.selectAll(".hitbox")
   })
   .on("mouseout", () => tooltip.style("visibility", "hidden"));
 }
+
+ // Adjust container selector and width as needed
+ const container = "#story-grid";
+ const chartWidth = 600;
+
+ d3.json("/images/capstonedatasetfinal.json")
+   .then(data => {
+     renderStoryGrid(container, data, chartWidth);
+   })
+   .catch(err => console.error("Failed to load JSON:", err));

@@ -49,3 +49,14 @@ if (window.location.pathname === '/') {
     card.style.display = [...activeTags].some(tag => cardTags.includes(tag)) || activeTags.size === 0 ? '' : 'none';
   });
 });
+
+//carousel
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 1.2,
+  loop: true,
+  spaceBetween:10,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});

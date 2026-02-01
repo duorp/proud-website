@@ -8,17 +8,7 @@
     "Editorial"
   ],
   "blocks": [
-    {
-      "type": "text",
-      "content": "test"
-    },
-    {
-      "type": "text",
-      "content": "test"
-    },
-    {
-      "type": "text",
-      "content": "test2"
-    }
+    {"type":"custom",
+  "content": "ICA8ZGl2IGNsYXNzPSJzd2lwZXIgbXlTd2lwZXIiPgogICAgPGRpdiBjbGFzcz0ic3dpcGVyLXdyYXBwZXIiPgogICAgICA8ZGl2IGNsYXNzPSJzd2lwZXItc2xpZGUiPjxpbWcgc3JjPSIvaW1hZ2VzL3JvbGUtcGxheS9wYWdlLTEucG5nIj48L2Rpdj4KICAgICAgPGRpdiBjbGFzcz0ic3dpcGVyLXNsaWRlIj48aW1nIHNyYz0iL2ltYWdlcy9yb2xlLXBsYXkvcGFnZS0yLnBuZyI+PC9kaXY+CiAgICAgIDxkaXYgY2xhc3M9InN3aXBlci1zbGlkZSI+PGltZyBzcmM9Ii9pbWFnZXMvcm9sZS1wbGF5L3BhZ2UtMy5wbmciPjwvZGl2PgogICAgICA8ZGl2IGNsYXNzPSJzd2lwZXItc2xpZGUiPjxpbWcgc3JjPSIvaW1hZ2VzL3JvbGUtcGxheS9wYWdlLTQucG5nIj48L2Rpdj4KCiAgICA8L2Rpdj4KICAgIDxkaXYgY2xhc3M9InN3aXBlci1wYWdpbmF0aW9uIj48L2Rpdj4KICA8L2Rpdj4="}
   ]
 }
