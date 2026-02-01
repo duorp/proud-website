@@ -128,8 +128,19 @@ function drawBackground() {
   fill(0); // BLACK text
   noStroke();
   textAlign(LEFT, CENTER);
-  textLeading(min(width, height) * 0.15);
-  textSize(min(width, height) * 0.15);
+  let scaleBase = min(width, height);
+
+  if (width <= 768) {
+    // 📱 Mobile font sizing
+    textSize(40);          // pick a readable fixed size
+    textLeading(43);
+  } else {
+    // 🖥 Desktop scaling
+    let scaleBase = min(width, height);
+    let ts = constrain(scaleBase * 0.12, 18, 48);
+    textSize(ts);
+    textLeading(ts * 1.1);
+  }
  
   text(
     fontReady ? "Proud Taranat is a visual designer. Her work ranges from web, branding, editorial, and creative computation. She is passionate about telling human stories rooted in data." : "Loading font...",
@@ -151,8 +162,7 @@ function drawScene() {
   //fill(180)
   noStroke();
   textAlign(LEFT, CENTER);
-  textLeading(min(width, height) * 0.15);
-  textSize(min(width, height) * 0.15);
+
  
   text(
     fontReady ? "Proud Taranat is a visual designer. Her work ranges from web, branding, editorial, and creative computation. She is passionate about telling human stories rooted in data." : "Loading font...",
@@ -161,4 +171,14 @@ function drawScene() {
 
 
   pop();
+}
+function resizeToLayout() {
+  const nav = document.querySelector("nav"); // or "#navbar"
+  const navH = nav ? nav.offsetHeight : 0;
+
+  resizeCanvas(windowWidth, windowHeight - navH);
+}
+
+function windowResized() {
+  resizeToLayout();
 }

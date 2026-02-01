@@ -547,8 +547,20 @@ object-fit: contain;
   padding:0;
 
   background-color: var(--white);
+  overflow: hidden;
 }
 
+@media (max-width: 768px) {
+  #landing {
+    height: 80vh;
+  }
+}
+
+@media (max-width: 1080px) {
+  #landing {
+    height: 60vh;
+  }
+}
 
 .tooltip {
   position: fixed;
