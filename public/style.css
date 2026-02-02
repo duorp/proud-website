@@ -537,6 +537,29 @@ object-fit: contain;
 
 
 /* landing */
+.landing__text{
+  max-width: 1200px;
+}
+
+.word {
+  display: inline-block;   /* key: word won't split */
+  white-space: nowrap;     /* extra safety */
+  padding-left: 0.5%;
+}
+
+.char {
+  transition: font-family 0.2s ease, transform 0.2s ease;
+  font-size: 3em;
+  font-weight: 500;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+.char.is-alt {
+  font-weight: 500;
+}
+
+
+
 #landing {
   width: 100%;
   z-index: 0;
@@ -544,7 +567,6 @@ object-fit: contain;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding:0;
 
   background-color: var(--white);
   overflow: hidden;
