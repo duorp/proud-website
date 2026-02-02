@@ -345,6 +345,7 @@ header {
       align-items: center;
       max-width: 1920px;
       border-bottom: 1px solid var(--black);
+      background-color: var(--white);
       
     }
 
