@@ -20,7 +20,7 @@ function wrapChars(text, wordClass = "word", charClass = "char") {
   
 
 const el = document.querySelector(".landing__text");
-el.innerHTML = wrapChars("Proud Taranat is a visual designer. Her work ranges from web, branding, editorial, and creative computation. She is passionate about telling human stories rooted in data.");
+el.innerHTML = wrapChars("Proud Taranat is a visual designer and hobbyist developer. She is passionate about telling human stories rooted in data.");
 
 
 function randomColor() {

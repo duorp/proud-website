@@ -19,6 +19,7 @@ svg * {
   --font-weight-bold: 700;
   --black: #0D0D0D;
   --white: #F9F9FF;
+  --grey: #A3A3A3;
   --max-width: 1920px;
 }
 
@@ -84,7 +85,7 @@ ol {
 
 hr {
   border: none;
-  border-bottom: 1px solid var(--black);
+  border-bottom: 1px solid var(--grey);
   max-width: var(--max-width); 
   width: 100%;
 }
@@ -179,7 +180,7 @@ h3 {
 .tag:hover {
   background-color: grey;
   color: var(--white);
-  border-color: var(--black);
+  border-color: var(--grey);
 }
 
 
@@ -344,7 +345,7 @@ header {
       justify-content: space-between;
       align-items: center;
       max-width: 1920px;
-      border-bottom: 1px solid var(--black);
+      border-bottom: 1px solid var(--grey);
       background-color: var(--white);
       
     }
@@ -386,7 +387,7 @@ header {
   padding: 2em 0em;
 z-index: 3;
   display: none;
-  border-bottom: 1px solid var(--black);
+  border-bottom: 1px solid var(--grey);
 }
 
 #hamburger-menu.toggled {
@@ -540,23 +541,25 @@ object-fit: contain;
 /* landing */
 .landing__text{
   max-width: 1200px;
+  color: var(--black);
 }
 
 .word {
   display: inline-block;   /* key: word won't split */
   white-space: nowrap;     /* extra safety */
   padding-left: 0.5%;
+ 
 }
 
 .char {
   transition: font-family 0.2s ease, transform 0.2s ease;
   font-size: 3em;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 1.1;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.01em;
 }
 .char.is-alt {
-  font-weight: 500;
+  font-weight: 400;
 }
 
 
@@ -564,26 +567,12 @@ object-fit: contain;
 #landing {
   width: 100%;
   z-index: 0;
-  height: 40vh;
-  display: flex;
-  justify-content: center;
   align-items: center;
-
   background-color: var(--white);
   overflow: hidden;
+  padding:2em;
 }
 
-@media (max-width: 768px) {
-  #landing {
-    height: 80vh;
-  }
-}
-
-@media (max-width: 1080px) {
-  #landing {
-    height: 60vh;
-  }
-}
 
 .tooltip {
   position: fixed;

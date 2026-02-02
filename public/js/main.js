@@ -1,3 +1,5 @@
+
+
 document.addEventListener('DOMContentLoaded', () => {
   const activeTags = new Set(JSON.parse(localStorage.getItem('activeTags') || '[]'));
 
@@ -13,6 +15,8 @@ if (window.location.pathname === '/') {
   // Delegate clicks for all tags in containers
   containers.forEach(container => {
     container.addEventListener('click', e => {
+      
+
       const tagEl = e.target.closest('.tag');
       if (!tagEl) return;
 
@@ -28,7 +32,13 @@ if (window.location.pathname === '/') {
       document.querySelectorAll('.tag').forEach(el => {
         const elTag = el.dataset.tag || el.textContent.trim();
         el.classList.toggle('active', activeTags.has(elTag));
+      
       });
+
+      // document.querySelectorAll('.active').forEach(el => {
+      //   el.style.backgroundColor = randomColor();
+      
+      // });
 
       // Filter cards
       cards.forEach(card => {
@@ -60,3 +70,9 @@ var swiper = new Swiper(".mySwiper", {
     clickable: true,
   },
 });
+
+//color
+function randomColor() {
+  const hue = Math.floor(Math.random() * 360);
+  return `hsl(${hue}, 70%, 55%)`;
+}
