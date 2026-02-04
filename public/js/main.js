@@ -51,9 +51,16 @@ fetch("https://api.weather.gov/gridpoints/OKX/37,39/forecast")
 
 //DOM CONTENT LOADED
     document.addEventListener('DOMContentLoaded', () => {
+      
       loadSavedTheme();
       //ADD HOVER STATES TO CHARACTERS
-  
+      const cursor = document.querySelector(".cursor");
+
+      window.addEventListener("mousemove", (e) => {
+        cursor.style.left = e.clientX + "px";
+        cursor.style.top = e.clientY + "px";
+      });
+      
 //FILTERING MECHANISM
   const activeTags = new Set(JSON.parse(localStorage.getItem('activeTags') || '[]'));
 
