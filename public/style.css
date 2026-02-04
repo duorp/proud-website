@@ -152,6 +152,10 @@ h2 {
   line-height: 115%;
 }
 
+.card__overlay h2 {
+  font-size: 1.66rem;
+  max-width: 800px;
+}
 h3 {
     font-family: "Oracle","Replica Std";
     font-weight: 400;
