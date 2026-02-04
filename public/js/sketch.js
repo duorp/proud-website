@@ -1,3 +1,4 @@
+
 let maxRadius;
 let idleTriggered = false;
 let activeColorIndex = 0;

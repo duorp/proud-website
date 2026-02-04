@@ -52,28 +52,24 @@ app.get("/p/:slug", (req, res) => {
   }
 });
 
-//blog page route
-app.get("/b/:slug", (req, res) => {
-  const slug = req.params.slug;
-  const filePath = `${__dirname}/data/blog/${slug}.json`;
-  console.log("Trying to load JSON file:", filePath);
+// gallery route
+app.get("/gallery", (req, res) => {
+  const galleryPath = path.join(__dirname, "public/images/personal-gallery");
 
-  try {
-    const project = JSON.parse(fs.readFileSync(filePath, "utf-8"));
+  fs.readdir(galleryPath, (err, files) => {
+    if (err) {
+      console.error("Error reading gallery folder:", err);
+      return res.status(500).send("Error loading gallery");
+    }
 
-    // Decode Base64 for any custom HTML blocks
-    project.blocks.forEach(block => {
-      if (block.type === "custom") {
-        block.content = Buffer.from(block.content, 'base64').toString('utf-8');
-      }
-    });
+    const images = files.filter((file) =>
+      /\.(jpg|jpeg|png|gif|webp|svg)$/i.test(file)
+    );
 
-    res.render("blog", { project });
-  } catch (err) {
-    console.error("Error loading project JSON:", err);
-    res.status(404).send("Project not found");
-  }
+    res.render("gallery", { images });
+  });
 });
+
 
 // index route
 app.get("/index", (req, res) => {
@@ -149,7 +145,6 @@ app.post("/admin/projects/:slug/edit", (req, res) => {
         : []
     };
 
-    // 👇 THIS GOES HERE
     project.blocks = req.body.blocks
       ? Object.values(req.body.blocks)
       : [];

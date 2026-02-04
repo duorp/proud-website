@@ -14,7 +14,7 @@
   <%- include('partials/header') %>
 <section class="main-content" id="landing">
 <div class="landing__text">
-  
+
 </div>
 </section>
 <secion class="main-content" style="padding-top: 0;">
@@ -28,7 +28,15 @@
   <li>Code</li>
   <a href="/index"><li>Everything</li></a>
 </ul>
-<p>small short description</p>
+<p>where i <a target="_blank" href="https://grimshaw.global/">work,</a> what i'm <a href="gallery">making,</a> <a href="mailto:proud.taranat@gmail.com">contact me</a></p>
+<div class="colors-container">
+  <div class="colors-container__colors" id="white"></div>
+  <div class="colors-container__colors" id="black"></div>
+  <div class="colors-container__colors" id="gray"></div>
+  <div class="colors-container__colors" id="random"></div>
+
+</div>
+
 </section>
   <section class="grid">
   <% projects.forEach(p => { %>
@@ -39,7 +47,7 @@
         style="--ratio: <%= p.ratio %>;"
       >
         <div class="card__overlay" <% if (p.type ==='b') { %>style="opacity: 1;"<% } %> >
-          <h2><%= p.subtitle %></h2>
+          <h3><%= p.subtitle %></h3>
         </div>
         <img src="\images\<%= p.slug %>.jpg"  onerror="this.onerror=null; this.src='/images/godfrey-dadich.gif';">
       </div>
