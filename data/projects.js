@@ -12,7 +12,7 @@ module.exports = [
     type: "p",
     slug: "dotdash-meredith",
     title: "Dotdash Meredith (Now People Inc.)",
-    subtitle: "Subheading",
+    subtitle: "",
     span: "medium",
     ratio: "4/3",
         tags: ["Editorial", "Brand","UX"]
@@ -22,7 +22,7 @@ module.exports = [
     type: "p",
     slug: "data-driven-textiles",
     title: "Data Driven Textiles",
-    subtitle: "Subheading",
+    subtitle: "",
     span: "medium",
     ratio: "3/4",
         tags: ["Data", "Editorial","Code"]
@@ -31,7 +31,7 @@ module.exports = [
     type: "p",
     slug: "godfrey-dadich",
     title: "Godfrey Dadich Partners",
-    subtitle: "Subheading",
+    subtitle: "",
     span: "medium",
       ratio: "4/3",
         tags: ["Editorial", "Illustration"]
@@ -40,7 +40,7 @@ module.exports = [
     type: "p",
     slug: "doherty-hall",
     title: "One Thousand Mornings at Doherty Hall",
-    subtitle: "Subheading",
+    subtitle: "",
     span: "medium",
     ratio: "4/3",
         tags: ["Data", "Brand"]
@@ -49,7 +49,7 @@ module.exports = [
     type: "p",
     slug: "role-play",
     title: "Role Play Magazine",
-    subtitle: "Subheading",
+    subtitle: "",
     span: "large",
     ratio: "16/9",
         tags: ["Editorial", "Identity"]
@@ -58,7 +58,7 @@ module.exports = [
     type: "p",
     slug: "uncover-aiga",
     title: "Uncover AIGA",
-    subtitle: "Subheading",
+    subtitle: "",
     span: "medium",
     ratio: "4/3",
         tags: ["UX","Data", "Code"
