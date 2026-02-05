@@ -770,9 +770,17 @@ display: flex;
 gap: 15px;
 flex-wrap:wrap;
 }
+
+.personal-gallery img {
+  border-radius:12px;
+  overflow:hidden;
+}
 .personal-gallery__item {
   width: calc((100% - (15px * 4)) / 5);
+  
 }
+
+
 @media screen and (max-width: 1200px) {
   .personal-gallery__item {
     width: calc((100% - (15px * 4)) / 3);
