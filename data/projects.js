@@ -63,5 +63,22 @@ module.exports = [
     ratio: "4/3",
         tags: ["UX","Data", "Code"
         ]
+  },{
+    type: "p",
+    slug: "d3",
+    title: "Data Visualizations",
+    subtitle: "A collection of data visualizations I’ve designed and programmed with D3.",
+    span: "medium",
+    ratio: "4/3",
+        tags: ["Data","Code"]
+  },
+  {
+    type: "p",
+    slug: "no-dont-die",
+    title: "Don't Die Interview Archive",
+    subtitle: "",
+    span: "large",
+    ratio: "16/9",
+        tags: ["Editorial","Code"]
   }
 ];

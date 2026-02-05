@@ -1,0 +1,24 @@
+{
+    "title": "Don't Die",
+    "headline": "An online lighthouse for people who feel lost, voiceless, and powerless working in creative industries and enduring the social internet.",
+    "description": "Don’t Die is a collection of 600+ interviews preserved by Stanford that aims to tell the story of how we are trying to come to grips with early 21st century life. I worked with Don’t Die’s creator, writer and journalist David Wolinsky to redesign the Don’t Die platform. I conducted user interviews, client workshops, and led its visual rebrand.",
+    "hero_image": "/images/no-dont-die/dont-die.png",
+    "tags": [
+      "Data",
+      "Editorial"
+    ],
+    "blocks": [
+      {
+        "type": "text",
+        "content": "test"
+      },
+      {
+        "type": "text",
+        "content": "test"
+      },
+      {
+        "type": "text",
+        "content": "test2"
+      }
+    ]
+  }

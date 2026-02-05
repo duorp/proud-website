@@ -24,11 +24,11 @@
       "size":"large",
       "images": [
         {
-          "src": "/images/story-vest.jpg",
+          "src": "/images/abortion-infographic/story-vest.jpg",
           "grow": "2"
         },
         {
-          "src": "/images/story-vest.png",
+          "src": "/images/abortion-infographic/story-vest.png",
           "grow": "1"
         }
       ]
@@ -44,15 +44,15 @@
       "type": "image",
       "images": [
         {
-          "src": "/images/scarf-1.jpg",
+          "src": "/images/abortion-infographic/scarf-1.jpg",
           "grow": "2"
         },
         {
-          "src": "/images/scarf-2.jpg",
+          "src": "/images/abortion-infographic/scarf-2.jpg",
           "grow": "2"
         },
           {
-          "src": "/images/scarf-map.png",
+          "src": "/images/abortion-infographic/scarf-map.png",
           "grow": "1"
         }
       ]

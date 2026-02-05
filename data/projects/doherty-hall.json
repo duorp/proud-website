@@ -2,7 +2,7 @@
   "title": "1000 Mornings at Doherty Hall",
   "headline": "A generative data installation that explores how data collection and visualization may be done simultaneously.",
   "description": "A generative data installation that explores how data collection and visualization may be done simultaneously.",
-  "hero_image": "The installation uses simple tactile interactions to collect data from passerbys through prompt-based drawings that follow a preset system. We’ve collected over 600 responses in its 2 month run across various spots in the CMU campus. The installation has also been adapted for use at the Association of Professional Futures Conference in Houston.",
+  "hero_image": "/images/doherty.png",
   "tags": [
     "Data",
     "Editorial"

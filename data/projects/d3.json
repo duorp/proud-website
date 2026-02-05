@@ -1,0 +1,11 @@
+{
+    "title": "",
+    "headline": "",
+    "description": "",
+    "hero_image": "",
+    "tags": ["Data", "Editorial"],
+    "blocks": [
+      { "type": "custom", "content": "PHNjcmlwdD4KICB3aW5kb3cubG9jYXRpb24uaHJlZiA9ICJodHRwczovL29ic2VydmFibGVocS5jb20vY29sbGVjdGlvbi9AcHRhcmFuYXQvZDMiOwo8L3NjcmlwdD4K" }
+    ]
+  }
+  
