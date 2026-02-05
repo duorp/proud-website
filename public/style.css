@@ -364,7 +364,7 @@ section {
 #navigation li {
   color: var(--black);
   font-family: "Oracle","Replica Std";
-  font-size: 2rem;
+  font-size: 1.66rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -447,7 +447,7 @@ z-index: 3;
 #hamburger-menu li {
   color: var(--black);
   font-family: "Oracle", "Replica Std";
-  font-size: 2rem;
+  font-size: 1.66rem;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
