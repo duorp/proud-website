@@ -9,16 +9,72 @@
   ],
   "blocks": [
     {
-      "type": "custom",
-      "content": "ICA8ZGl2IGNsYXNzPSJibG9jayBibG9jay0tZ2FsbGVyeSI+CiAgICA8ZGl2IGNsYXNzPSJnYWxsZXJ5X19jb2x1bW4iPgogICAgPGRpdiBjbGFzcz0iZ2FsbGVyeV9faXRlbSI+CiAgICAgIDxpbWcgc3JjPSIvaW1hZ2VzL3RoZS1iYWxhbmNlLzEucG5nIj4KICAgIDwvZGl2PgogICAgICAgIDxkaXYgY2xhc3M9ImdhbGxlcnlfX2l0ZW0iPgogICAgICAgICAgPGltZyBzcmM9Ii9pbWFnZXMvdGhlLWJhbGFuY2UvMi5wbmciPgogICAgPC9kaXY+CiAgICAgICAgPGRpdiBjbGFzcz0iZ2FsbGVyeV9faXRlbSI+CiAgICAgICAgICA8aW1nIHNyYz0iL2ltYWdlcy90aGUtYmFsYW5jZS8zLnBuZyI+CiAgICA8L2Rpdj4KPC9kaXY+CiAgICA8ZGl2IGNsYXNzPSJnYWxsZXJ5X19jb2x1bW4iPgogICAgICAgIDxkaXYgY2xhc3M9ImdhbGxlcnlfX2l0ZW0iPgogICAgICAgICAgPGltZyBzcmM9Ii9pbWFnZXMvdGhlLWJhbGFuY2UvNS5wbmciPgogICAgPC9kaXY+CiAgICA8ZGl2IGNsYXNzPSJnYWxsZXJ5X19pdGVtIj4KICAgICAgPGltZyBzcmM9Ii9pbWFnZXMvdGhlLWJhbGFuY2UvNi5wbmciPgo8L2Rpdj4gICAgCjwvZGl2Pgo8ZGl2IGNsYXNzPSJnYWxsZXJ5X19jb2x1bW4iPgogIDxkaXYgY2xhc3M9ImdhbGxlcnlfX2l0ZW0iPgogICAgPGltZyBzcmM9Ii9pbWFnZXMvdGhlLWJhbGFuY2UvNC5wbmciPgogIDwvZGl2PiAKPC9kaXY+CiAgPC9kaXY+"
+      "type": "text",
+      "content": "<span class=\"eyebrow\">BRAND</span>As the Balance was working towards a fresher, more bold brand identity, I kicked off their rebrand project by developing a sub-brand for My Two Cents."
+      
     },
     {
-      "type": "text",
-      "content": "test"
-    },
-    {
-      "type": "text",
-      "content": "test2"
-    }
+      
+        "type": "image",
+        "images": [
+          {
+            "src": "/images/the-balance/Brand.png",
+            "grow": "1"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "content": "<span class=\"eyebrow\">EDITORIAL SYSTEM</span><p>Along with this rebrand, I developed a design system to allow editorial teams to rapidly generate recirculation images that differentiated MTC from other content on the site. You can see these images in action <a href='https://www.thebalancemoney.com/personal-stories-6265547'>here.</a></p>"
+        
+      },
+      {
+      
+        "type": "image",
+        "images": [
+          {
+            "src": "/images/the-balance/IDontHaveEnoughSavedforRetirement.NowWhat_-eb8cdef8d968471ea11557f3317ce94e.png",
+            "grow": "1"
+          },
+          {
+            "src": "/images/the-balance/ImaSingleMom.HowCanIHelpMySonPayForCollege_-05dbe360abd445ef97612c9af93299ca.png",
+            "grow": "1"
+          },
+          {
+            "src": "/images/the-balance/MyBoyfriendandICantGetOutofDebt.WhatDoWeDo_-58f98fff46e84d56b648a47a12a181be.png",
+            "grow": "1"
+          }
+        ]
+      },
+     
+      {
+      
+        "type": "image",
+        "size":"large",
+        "images": [
+          {
+            "src": "/images/the-balance/article1.png",
+            "grow": "1"
+          },
+          {
+            "src": "/images/the-balance/article2.png",
+            "grow": "1"
+          }
+        ]
+      },
+      {"type": "text",
+    "content":"<span class=\"eyebrow\">SOCIAL</span>I developed a number of templates for My Two Cents to highlight its headlines and images. <br><br>I also adopted a social media strategy that emphasized content that could be natively shared within the app, as opposed to through a link in bio."},
+      {
+      
+        "type": "image",
+        "size":"large",
+        "images": [
+          {
+            "src": "/images/the-balance/frames.png",
+            "grow": "1"
+          }
+        ]
+      }
+  
   ]
 }

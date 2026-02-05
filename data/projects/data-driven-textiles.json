@@ -21,6 +21,7 @@
     },
         {
       "type": "image",
+      "size":"large",
       "images": [
         {
           "src": "/images/story-vest.jpg",
