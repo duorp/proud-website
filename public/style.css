@@ -735,24 +735,27 @@ display: none
   
 }
 
-/*carousel*/
+/* carousel */
 .swiper {
   width: 100%;
 }
 
+/* optional: lets slides size themselves to the image width when using slidesPerView:"auto" */
 .swiper-slide {
+  width: auto;         /* key for slidesPerView: "auto" */
+  flex-shrink: 0;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  align-items: flex-start;  /* top align */
 }
 
+/* the image sets the slide size */
 .swiper-slide img {
-  min-height: 80vh;
-  max-width: 100%;
-  max-height: 100vh;
-  width: auto;
-  height: auto;
+  height: 80vh;        /* SAME HEIGHT for all images */
+  width: auto;         /* width follows aspect ratio */
+  max-width: 100%;     /* don't exceed slide/container width */
+  max-height: 100vh;   /* safety cap */
   object-fit: contain;
+  display: block;
 }
 
 .block--custom {

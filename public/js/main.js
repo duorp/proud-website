@@ -152,14 +152,9 @@ if (window.location.pathname === '/') {
 });
 
 //CAROUSEL
-var swiper = new Swiper(".mySwiper", {
-  slidesPerView: 1.2,
-  loop: true,
-  spaceBetween:10,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
+new Swiper(".mySwiper", {
+  slidesPerView: "auto",
+  spaceBetween: 16,
 });
 
 //HELPER FUNCTIONS

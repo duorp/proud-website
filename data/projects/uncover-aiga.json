@@ -1,7 +1,7 @@
 {
   "title": "Uncover AIGA",
   "headline": "The AIGA Design Census surveys 9000+ professional designers on what it means to be a designer today.",
-  "description": "Uncover AIGA is a a web experience that illuminates the people and stories behind the 2019 AIGA Design Census. Users filter between categories, gain insight through ‘surface’ data points, and dive into deeper insights by reading quotes of the designers that the data points truly speak to.\r\n\r\nIn addition to design, I was also the sole developer on the project.",
+  "description": "Uncover AIGA is a a web experience that illuminates the people and stories behind the 2019 AIGA Design Census. Users filter between categories, gain insight through ‘surface’ data points, and dive into deeper insights by reading quotes of the designers that the data points truly speak to.\r\n\r\nIn addition to design, I was also the sole developer on the project. <br><br><a href='https://grimeysz.github.io/AIGA-Census/'> view the live site</a> <br><br>Please keep in mind: This project was developed in 2021, pre-chatgpt, and before I really knew how to code. It is admittedly a little clunky!",
   "hero_image": "/images/abortion-infographic-hero.jpg",
   "tags": [
     "Data",
@@ -9,16 +9,8 @@
   ],
   "blocks": [
     {
-      "type": "text",
-      "content": "test"
-    },
-    {
-      "type": "text",
-      "content": "test"
-    },
-    {
-      "type": "text",
-      "content": "test2"
+      "type": "custom",
+      "content": "ICA8ZGl2IGNsYXNzPSJzd2lwZXIgbXlTd2lwZXIiPgogICAgPGRpdiBjbGFzcz0ic3dpcGVyLXdyYXBwZXIiPgogICAgICA8ZGl2IGNsYXNzPSJzd2lwZXItc2xpZGUiPjxpbWcgc3JjPSIvaW1hZ2VzL3VuY292ZXItQUlHQS9Mb3ctTGFuZGluZy5naWYiPjwvZGl2PgogICAgICA8ZGl2IGNsYXNzPSJzd2lwZXItc2xpZGUiPjxpbWcgc3JjPSIvaW1hZ2VzL3VuY292ZXItQUlHQS9ob21lLmdpZiI+PC9kaXY+CiAgICAgIDxkaXYgY2xhc3M9InN3aXBlci1zbGlkZSI+PGltZyBzcmM9Ii9pbWFnZXMvdW5jb3Zlci1BSUdBL2RhdGEuZ2lmIj48L2Rpdj4KICAgICAgPGRpdiBjbGFzcz0ic3dpcGVyLXNsaWRlIj48aW1nIHNyYz0iL2ltYWdlcy91bmNvdmVyLUFJR0Evc3Rvcmllcy5naWYiPjwvZGl2PgoKICAgIDwvZGl2PgogICAgPGRpdiBjbGFzcz0ic3dpcGVyLXBhZ2luYXRpb24iPjwvZGl2PgogIDwvZGl2Pg=="
     }
   ]
 }
