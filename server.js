@@ -1,9 +1,10 @@
 const fs = require("fs");
 const express = require("express");
 const path = require("path");
-
+require("dotenv").config();
 const app = express();
 const PORT = 3000; // or process.env.PORT || 3000
+const { neon } = require("@neondatabase/serverless");
 
 // Set EJS as templating engine
 app.set("view engine", "ejs");
@@ -14,6 +15,9 @@ app.use(express.static(path.join(__dirname, "public")));
 app.use(express.static('public')); 
 app.use(express.urlencoded({ extended: true }));
 app.use('/scripts', express.static(__dirname + '/node_modules/p5/lib'));
+app.use(express.json()); // for fetch() JSON bodies
+const sql = neon(process.env.DATABASE_URL);
+
 
 
 // Homepage route
@@ -50,6 +54,11 @@ app.get("/p/:slug", (req, res) => {
     console.error("Error loading project JSON:", err);
     res.status(404).send("Project not found");
   }
+});
+//brand new shape
+
+app.get("/brand-new-shape", (req, res) => {
+  res.render("brand-new-shape");
 });
 
 // gallery route
@@ -161,3 +170,43 @@ app.post("/admin/projects/:slug/edit", (req, res) => {
     res.status(500).send("Failed to save project");
   }
 });
+
+
+// NEON route
+app.post("/api/shapes", async (req, res) => {
+  try {
+    const shape = req.body;
+
+    if (!shape || !Array.isArray(shape.verts)) {
+      return res.status(400).json({ error: "Invalid shape format" });
+    }
+
+    await sql`
+      INSERT INTO shapes (data)
+      VALUES (${shape})
+    `;
+
+    res.json({ ok: true });
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ error: "Database error" });
+  }
+});
+
+app.get("/api/shapes", async (req, res) => {
+  try {
+    const rows = await sql`
+      SELECT id, data, created_at
+      FROM shapes
+      ORDER BY id DESC
+      LIMIT 50
+    `;
+
+    res.json(rows);
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ error: "Database error" });
+  }
+});
+
+console.log("DATABASE_URL set?", Boolean(process.env.DATABASE_URL));

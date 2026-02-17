@@ -1,0 +1,23 @@
+<header>
+    <nav id="navbar">
+            <div class="logo">
+
+                <a href="/">Proud Taranat</a>
+            </div>
+            <div id="hamburger-menu-icon">
+            </div>
+    </nav>
+    <div id="hamburger-menu">
+        <div class="landing__text">
+
+        </div>
+    </div>
+</header>
+<script>
+    const target = document.getElementById('hamburger-menu');
+    const button = document.getElementById('hamburger-menu-icon');
+
+    button.addEventListener('click', () => {
+        target.classList.toggle('toggled');
+    });
+</script>
