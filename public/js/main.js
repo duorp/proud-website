@@ -113,21 +113,30 @@ if (window.location.pathname === '/') {
   const el = document.querySelector(".landing__text");
   el.innerHTML = wrapChars("Proud Taranat is a visual designer and hobbyist developer. She is passionate about telling human stories rooted in data.");
 
-    document.addEventListener("mouseover", (e) => {
-      const char = e.target.closest(".char");
-      if (!char) return;
-    
-      char.classList.add("is-alt");
-      char.style.color = accentColor;
-    
-      clearTimeout(char._fontTimer);
-    
-      char._fontTimer = setTimeout(() => {
-        char.classList.remove("is-alt");
-        char.style.color = ""; // revert to original color
-      }, 2000);
-    });
+document.addEventListener("mouseover", (e) => {
+  const char = e.target.closest(".char");
+  if (!char) return;
 
+  const tx = (Math.random() - 0.5) * 12; // random X: -6px to 6px
+  const ty = (Math.random() - 0.5) * 12; // random Y: -6px to 6px
+  const blur = (Math.random() * 3 + 1).toFixed(1); // random blur: 1–4px
+
+  char.classList.add("is-alt");
+  char.style.color = accentColor;
+  char.style.transform = `translate(${tx}px, ${ty}px)`;
+  char.style.filter = `blur(${blur}px)`;
+char.style.transform = `translate(${tx}px, ${ty}px) scale(1.3)`;
+
+  clearTimeout(char._fontTimer);
+
+  char._fontTimer = setTimeout(() => {
+    char.classList.remove("is-alt");
+    char.style.color = "";
+    char.style.transform = "";
+    char.style.filter = "";
+    char.style.transform = "";
+  }, 2000);
+});
 
    // Apply saved theme on page load
   loadSavedTheme();
@@ -161,24 +170,22 @@ function randomColor() {
 
 function wrapChars(text, wordClass = "word", charClass = "char") {
   return text
-    .split(/(\s+)/) 
+    .split(/(\s+)/)
     .map(token => {
       if (/^\s+$/.test(token)) {
-       
         return token
           .replace(/ /g, "&nbsp;")
           .replace(/\n/g, "<br>");
       }
 
       const chars = [...token]
-        .map(ch => `<span class="${charClass}">${ch}</span>`)
+        .map(ch => `<span class="char-wrap"><span class="${charClass}">${ch}</span></span>`)
         .join("");
 
       return `<span class="${wordClass}">${chars}</span>`;
     })
     .join("");
 }
-
 //COLOR PALETTES
 
 function applyTheme(theme) {

@@ -609,13 +609,25 @@ object-fit: contain;
 }
 
 .char {
-  transition: font-family 0.2s ease, transform 0.2s ease;
   font-size: 3.2em;
   font-weight: 400;
   line-height: 1.1;
+    display: inline-block; /* required for transform to work on inline elements */
+  transition: transform 0.3s ease, filter 0.3s ease, color 0.3s ease, font-size 0.3s ease;
 }
 .char.is-alt {
   font-weight: 400;
+}
+
+.char-wrap {
+  display: inline-block;
+  position: relative;
+}
+
+.char {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
 }
 
 
