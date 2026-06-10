@@ -420,8 +420,8 @@ header {
         top: 0;
         z-index: 3;
       }
-      #hamburger-menu.active {
-        background-color: var(--white);
+      #hamburger-menu {
+        display:none;
       }
     }
 
@@ -449,13 +449,13 @@ header {
   width: 100%;
   padding: 2em 0em;
 z-index: 3;
-  display: block;
+  display: none;
   border-bottom: 1px solid var(--black);
   background-color: var(--white);
 }
 
 #hamburger-menu.toggled {
-  display:none;
+  display:block;
 }
 
 #hamburger-menu li {
