@@ -9,7 +9,7 @@ svg * {
   --font-size-sm: 0.875rem;
   --font-size-md: 1rem;
   --font-size-lg: 1.25rem;
-  --font-size-xl: 1.5rem;
+  --font-size-xl: 1.25rem;
 
   --line-height-tight: 1.2;
   --line-height-normal: 1.5;
@@ -20,7 +20,7 @@ svg * {
   --black: #0D0D0D;
   --white: #F9F9FF;
   --accent: #E56E38;
-  --max-width: 1920px;
+  --max-width: 2160px;
 }
 
 /* Chrome, Edge, Safari */
@@ -132,8 +132,8 @@ h4 a {
 }
 
 p {
-  font-size: 1.25rem;
-  line-height: 150%;
+  font-size: var(--font-size-md);
+  line-height: 125%;
   max-width: 800px;
 }
 /*fonts*/
@@ -169,7 +169,7 @@ h2 {
 h3 {
     font-family: "Oracle","Replica Std";
     font-weight: 400;
-  font-size: 1.66rem;
+  font-size: var(--font-size-lg);
   line-height: 100%;
   margin-top: 4px
 }
@@ -179,7 +179,7 @@ h3 {
 .tag {
   font-family: "Oracle","Replica Std";
   font-weight: 300;
-  font-size: 0.75rem;
+  font-size: var(--font-size-xs);
   line-height: 90%;
   display: inline-block;
   border: 1px solid var(--black);
@@ -233,7 +233,7 @@ section {
 }
 .grid {
   width: 100%;
-  max-width: 1800px;
+  max-width: var(--max-width);
   display: grid;
   row-gap: 33px;
   column-gap: 3rem;
@@ -338,7 +338,7 @@ section {
   align-items: flex-start;
   gap: 30px;
   margin: 0 auto;
-  max-width: 1920px;
+  max-width: var(--max-width);
   z-index: 1;
 }
 @media (max-width: 768px) {
@@ -364,7 +364,7 @@ section {
 #navigation li {
   color: var(--black);
   font-family: "Oracle","Replica Std";
-  font-size: 1.66rem;
+  font-size: var(--font-size-lg);
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -384,7 +384,7 @@ header {
   top: 0;
   padding: 0em 2em;
    margin: 0 auto;
-  max-width: 1920px;
+  max-width: var(--max-width);
 }
 
     #navbar {
@@ -392,7 +392,7 @@ header {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      max-width: 1920px;
+      max-width: var(--max-width);
       border-bottom: 1px solid var(--black);
       background-color: var(--white);
       
@@ -416,20 +416,22 @@ header {
     .logo a {
       font-family: "Oracle","Replica Std";
     font-weight: 400;
-  font-size: 1.66rem;     
+  font-size: var(--font-size-xl);     
         color: var(--black);
         text-decoration: none;
     }
 
 #hamburger-menu-icon {
-  border-radius: 8px;
-  background-color: var(--accent);
-  width: 36px;
-  height: 36px;
+  width: 50px;
+  height: 50px;
   box-sizing: border-box;
-  padding: 10px;
+  transition: transform 0.3s ease;
+  fill: var(--black);
 }
 
+#hamburger-menu-icon:hover {
+  transform: rotate(20deg);
+}
 #hamburger-menu {
   left: 0;
   width: 100%;
@@ -460,8 +462,6 @@ z-index: 3;
 .project-hero .card__tags{
 flex: 1;
 display: flex;
-  justify-content: flex-end; 
-  gap:8px;
 }
 
 .project-page {
@@ -802,9 +802,7 @@ flex-wrap:wrap;
 
 
 /* cursor */
-body {
-  cursor: none;
-}
+
 
 /* The circle */
 .cursor {
