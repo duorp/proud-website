@@ -1,0 +1,58 @@
+{
+  "title": "Acclimate Ventures",
+  "headline": "Website and brand identity for a venture capital firm focused on deep tech.",
+  "description": "Acclimate Ventures supports early=stage deep tech climate startups in the US and UK. Their investments drive planet-positive innovation, brining their network of knowledge and access to help entreprenurs grow and scale. My role was in developing the firm's brand identity and website design.",
+  "hero_image": "/images/acclimate-ventures.gif",
+  "tags": [
+    "Brand",
+    "Web"
+  ],
+  "blocks": [
+    {
+      
+        "type": "image",
+        "size":"large",
+        "images": [
+          {
+            "src": "/images/acclimate-ventures/AV-1.jpg",
+            "grow": "1"
+          }
+        ]
+      },
+       {
+      
+        "type": "image",
+        "size":"large",
+        "images": [
+          {
+            "src": "/images/acclimate-ventures/AV-2.jpg",
+            "grow": "1"
+          }
+        ]
+      },
+       {
+      
+        "type": "image",
+        "size":"large",
+        "images": [
+          {
+            "src": "/images/acclimate-ventures/AV-3.jpg",
+            "grow": "1"
+          }
+        ]
+      },
+       {
+      
+        "type": "image",
+        "size":"large",
+        "images": [
+          {
+            "src": "/images/acclimate-ventures/AV-4.jpg",
+            "grow": "1"
+          }
+        ]
+      }
+      
+  
+  ]
+}

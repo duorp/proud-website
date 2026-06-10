@@ -17,7 +17,6 @@ module.exports = [
     ratio: "4/3",
         tags: ["Editorial", "Brand","UX"]
   },
-
     {
     type: "p",
     slug: "data-driven-textiles",
@@ -27,6 +26,17 @@ module.exports = [
     ratio: "3/4",
         tags: ["Data", "Editorial","Code"]
   },
+    {
+    type: "p",
+    slug: "acclimate-ventures",
+    title: "Acclimate Ventures",
+    subtitle: "",
+    span: "large",
+    ratio: "16/8",
+        tags: ["Brand","UX"]
+  },
+
+  
     {
     type: "p",
     slug: "godfrey-dadich",

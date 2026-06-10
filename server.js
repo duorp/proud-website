@@ -6,6 +6,19 @@ const app = express();
 const PORT = 3000; // or process.env.PORT || 3000
 const { neon } = require("@neondatabase/serverless");
 
+const IMAGE_EXTS = ['.jpg', '.jpeg', '.png', '.gif', '.webp', '.avif', '.svg'];
+const IMAGES_DIR = path.join(__dirname, 'public', 'images');
+const FALLBACK = '/images/godfrey-dadich.gif';
+
+function resolveProjectImage(slug) {
+  for (const ext of IMAGE_EXTS) {
+    if (fs.existsSync(path.join(IMAGES_DIR, slug + ext))) {
+      return `/images/${slug}${ext}`;
+    }
+  }
+  return FALLBACK;
+}
+
 // Set EJS as templating engine
 app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "views"));
@@ -22,9 +35,12 @@ const sql = neon(process.env.DATABASE_URL);
 
 // Homepage route
 app.get("/", (req, res) => {
-  res.render("home", {
-    projects: require("./data/projects")
-  }); // just render index.ejs, no data
+  const projects = require("./data/projects").map(p => ({
+    ...p,
+    image: resolveProjectImage(p.slug),
+  }));
+
+  res.render("home", { projects });
 });
 
 // Start the server
@@ -82,7 +98,10 @@ app.get("/gallery", (req, res) => {
 
 // index route
 app.get("/index", (req, res) => {
-  const projects = require("./data/projects");
+  const projects = require("./data/projects").map(p => ({
+    ...p,
+    image: resolveProjectImage(p.slug),
+  }));
 
   const tags = [...new Set(
     projects.flatMap(p => p.tags || [])

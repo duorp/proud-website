@@ -51,7 +51,20 @@ fetch("https://api.weather.gov/gridpoints/OKX/37,39/forecast")
 
 //DOM CONTENT LOADED
     document.addEventListener('DOMContentLoaded', () => {
-      
+      let idleTimer;
+
+document.addEventListener("mousemove", resetIdle);
+document.addEventListener("keydown", resetIdle);
+resetIdle();
+function resetIdle() {
+  clearTimeout(idleTimer);
+  
+  // remove all eyes on mouse move
+  document.querySelectorAll(".eye").forEach(eye => eye.remove());
+  
+  idleTimer = setTimeout(showEye, 10000);
+}
+
       loadSavedTheme();
       //ADD HOVER STATES TO CHARACTERS
 
@@ -202,5 +215,21 @@ function loadSavedTheme() {
   if (savedName && THEMES[savedName]) {
     applyTheme(THEMES[savedName]);
   }
+}
+
+
+
+
+
+function showEye() {
+  const eye = document.createElement("div");
+  eye.classList.add("eye");
+  eye.style.left = `${Math.random() * 100}vw`;
+  eye.style.top = `${Math.random() * 100}vh`;
+  document.body.appendChild(eye);
+
+
+  // keep spawning more while still idle
+  idleTimer = setTimeout(showEye, 10000);
 }
 

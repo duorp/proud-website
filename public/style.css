@@ -162,7 +162,7 @@ p {
 
 
 h2 {
-    font-family: "Oracle","Replica Std";
+    font-family: "Writer","Oracle","Replica Std";
     font-weight: 400;
   font-size: 2.5rem;
   line-height: 115%;
@@ -490,7 +490,7 @@ display: flex;
 }
 
 .project-page p {
-  font-size: 1.25rem;
+  font-size: var(--font-size-md);
   line-height: 150%;
   max-width: 800px;
 }  
@@ -530,7 +530,7 @@ display: flex;
 }
 
 .image--large {
-  max-width: 1600px;
+  max-width: var(--max-width);
 }
 
 /* responsive gallery */
@@ -834,18 +834,20 @@ flex-wrap:wrap;
 }
 
 
-/* cursor */
+/* idle */
 
-
-/* The circle */
-.cursor {
-  width: 15px;
-  height: 15px;
-  background-color: var(--accent);
-  border-radius: 50%;
+.eye {
   position: fixed;
-  pointer-events: none;
+  width: 60px;
+  height: 60px;
+  background: url("images/favicon.svg") center / contain no-repeat;
   transform: translate(-50%, -50%);
-  z-index: 9999;
-  transition: transform 0.08s ease-out;
+  animation: fadeIn 0.4s ease;
+  pointer-events: none;
+  z-index: 999;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; scale: 0.8; }
+  to   { opacity: 1; scale: 1; }
 }
