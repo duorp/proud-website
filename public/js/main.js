@@ -119,7 +119,7 @@ document.addEventListener("mouseover", (e) => {
 
   const tx = (Math.random() - 0.5) * 12; // random X: -6px to 6px
   const ty = (Math.random() - 0.5) * 12; // random Y: -6px to 6px
-  const blur = (Math.random() * 3 + 1).toFixed(1); // random blur: 1–4px
+  const blur = (Math.random() * 2 + 1).toFixed(1); // random blur: 1–4px
 
   char.classList.add("is-alt");
   char.style.color = accentColor;

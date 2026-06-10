@@ -310,10 +310,12 @@ section {
 }
 
 .card__overlay {
-  border-radius:12px;
+  border-radius: 12px;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
   position: absolute;
   inset: 0;
-  background: var(--white);
+  background: rgba(255, 255, 255, 0.4);
   color: var(--black);
   display: flex;
   align-items: center;
@@ -325,6 +327,10 @@ section {
   border: 1px solid var(--black);
 }
 
+.card__overlay h3 {
+  max-width: 600px;
+
+}
 
 
 .card__image:hover .card__overlay {
