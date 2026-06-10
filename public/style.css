@@ -139,6 +139,12 @@ p {
 /*fonts*/
 
 
+@font-face {
+  font-family: "Writer";
+  src: url("fonts/PPWriter-Thin.otf") format("opentype");
+  font-weight: 100;
+  font-style: normal;
+}
 
 @font-face {
   font-family: "Oracle";
@@ -437,13 +443,13 @@ header {
   width: 100%;
   padding: 2em 0em;
 z-index: 3;
-  display: none;
+  display: block;
   border-bottom: 1px solid var(--black);
   background-color: var(--white);
 }
 
 #hamburger-menu.toggled {
-  display:block;
+  display:none;
 }
 
 #hamburger-menu li {
@@ -590,23 +596,23 @@ object-fit: contain;
 
 /* landing */
 .landing__text{
-  max-width: 1200px;
+  max-width: 1500px;
   color: var(--black);
 }
 
 .word {
+  font-family: "Writer", "Oracle";
+  font-weight: 400;
   display: inline-block;   /* key: word won't split */
   white-space: nowrap;     /* extra safety */
-  padding-right: 0.5%;
- 
+  padding-right: 0.6%;
 }
 
 .char {
   transition: font-family 0.2s ease, transform 0.2s ease;
-  font-size: 3em;
+  font-size: 3.2em;
   font-weight: 400;
   line-height: 1.1;
-  letter-spacing: -0.01em;
 }
 .char.is-alt {
   font-weight: 400;

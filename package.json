@@ -17,6 +17,9 @@
     "nodemon": "^3.1.14",
     "p5": "^2.2.0"
   },
+  "nodemonConfig": {
+  "ignore": ["public/fonts/*"]
+},
   "keywords": [],
   "author": "",
   "license": "ISC",
