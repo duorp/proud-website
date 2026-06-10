@@ -148,8 +148,8 @@ char.style.transform = `translate(${tx}px, ${ty}px) scale(1.3)`;
       const theme = THEMES[themeName];
       if (!theme) return;
 
-      applyTheme(theme);
-      localStorage.setItem(STORAGE_KEY, themeName);
+      //applyTheme(theme);
+      //localStorage.setItem(STORAGE_KEY, themeName);
     });
   });
 

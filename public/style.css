@@ -19,7 +19,7 @@ svg * {
   --font-weight-bold: 700;
   --black: #0D0D0D;
   --white: #F9F9FF;
-  --accent: #E56E38;
+  --accent: #98CB32;
   --max-width: 2160px;
 }
 
@@ -94,8 +94,8 @@ a {
   text-decoration: none;
 }
 p a {
-  text-decoration: underline wavy var(--accent);
-  color: inherit;
+
+  color: var(--accent);
 }
 html, body {
   height: auto;      /* IMPORTANT */
@@ -420,9 +420,6 @@ header {
         top: 0;
         z-index: 3;
       }
-      #hamburger-menu {
-        display:none;
-      }
     }
 
     .logo a {
@@ -603,7 +600,19 @@ object-fit: contain;
 /* landing */
 .landing__text{
   max-width: 1500px;
-  color: var(--black);
+
+
+}
+
+.landing__container{
+    padding: 2em 0em;
+  width: 100%;
+  border-bottom: 1px solid var(--black);
+}
+
+#hamburger-menu-home {
+  padding: 0em 2em;
+
 }
 
 .word {
