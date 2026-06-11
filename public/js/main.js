@@ -62,7 +62,7 @@ function resetIdle() {
   // remove all eyes on mouse move
   document.querySelectorAll(".eye").forEach(eye => eye.remove());
   
-  idleTimer = setTimeout(showEye, 15000);
+  idleTimer = setTimeout(showEye, 20000);
 }
 
       loadSavedTheme();
@@ -230,6 +230,6 @@ function showEye() {
 
 
   // keep spawning more while still idle
-  idleTimer = setTimeout(showEye, 10000);
+  idleTimer = setTimeout(showEye, 30000);
 }
 
