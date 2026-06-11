@@ -47,7 +47,7 @@ module.exports = [
         tags: ["Editorial", "Illustration"]
   },
     {
-    type: "p",
+    type: "c",
     slug: "doherty-hall",
     title: "One Thousand Mornings at Doherty Hall",
     subtitle: "",
@@ -83,7 +83,7 @@ module.exports = [
         tags: ["Data","Code"]
   },
   {
-    type: "p",
+    type: "c",
     slug: "no-dont-die",
     title: "Don't Die Interview Archive",
     subtitle: "",

@@ -851,3 +851,16 @@ flex-wrap:wrap;
   from { opacity: 0; scale: 0.8; }
   to   { opacity: 1; scale: 1; }
 }
+
+.under-construction {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  gap: 2em;
+}
+
+.under-construction * {
+    max-width: 600px;
+    text-align: center;
+}

@@ -71,11 +71,7 @@ app.get("/p/:slug", (req, res) => {
     res.status(404).send("Project not found");
   }
 });
-//brand new shape
 
-app.get("/brand-new-shape", (req, res) => {
-  res.render("brand-new-shape");
-});
 
 // gallery route
 app.get("/gallery", (req, res) => {
@@ -229,3 +225,8 @@ app.get("/api/shapes", async (req, res) => {
 });
 
 console.log("DATABASE_URL set?", Boolean(process.env.DATABASE_URL));
+
+//under construction page
+app.get("/under-construction", (req, res) => {
+  res.render("under-construction");
+});
