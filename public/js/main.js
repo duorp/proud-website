@@ -1,29 +1,5 @@
 console.log("main.js loaded on", location.pathname, "saved:", localStorage.getItem("siteTheme"));
 
-const STORAGE_KEY = "siteTheme";
-const THEMES = {
-  white: {
-    c1: "#F9F9FF",
-    c2: "#0D0D0D",
-    c3: "#E56E38"
-  },
-  black: {
-    c1: "#0D0D0D",
-    c2: "#F9F9FF",
-    c3: "#0045DA"
-  },
-  gray: {
-    c1: "#C1C1C1",
-    c2: "#181818",
-    c3: "#95FF00"
-  },
-  random: {
-    c1: "#325E48",
-    c2: "#FBE4FF",
-    c3: "#28FFBB"
-  }
-};
-var accentColor = "#E56E38"
 
 //api calls
 fetch("https://api.github.com/repos/duorp/proud-website/commits?per_page=1")
@@ -65,7 +41,7 @@ function resetIdle() {
   idleTimer = setTimeout(showEye, 20000);
 }
 
-      loadSavedTheme();
+  
       //ADD HOVER STATES TO CHARACTERS
 
       
@@ -135,7 +111,8 @@ document.addEventListener("mouseover", (e) => {
   const blur = (Math.random() * 2 + 1).toFixed(1); // random blur: 1–4px
 
   char.classList.add("is-alt");
-  char.style.color = accentColor;
+const accentColor = getComputedStyle(document.documentElement).getPropertyValue('--accent').trim();
+char.style.color = accentColor;
   char.style.transform = `translate(${tx}px, ${ty}px)`;
   char.style.filter = `blur(${blur}px)`;
 char.style.transform = `translate(${tx}px, ${ty}px) scale(1.3)`;
@@ -151,20 +128,9 @@ char.style.transform = `translate(${tx}px, ${ty}px) scale(1.3)`;
   }, 2000);
 });
 
-   // Apply saved theme on page load
-  loadSavedTheme();
 
-  // Add click listeners to all theme buttons
-  document.querySelectorAll(".colors-container__colors").forEach(btn => {
-    btn.addEventListener("click", () => {
-      const themeName = btn.id;
-      const theme = THEMES[themeName];
-      if (!theme) return;
 
-      //applyTheme(theme);
-      //localStorage.setItem(STORAGE_KEY, themeName);
-    });
-  });
+
 
 });
 
@@ -200,26 +166,6 @@ function wrapChars(text, wordClass = "word", charClass = "char") {
     .join("");
 }
 //COLOR PALETTES
-
-function applyTheme(theme) {
-  const root = document.documentElement;
-  root.style.setProperty("--white", theme.c1);
-  root.style.setProperty("--black", theme.c2);
-  root.style.setProperty("--accent", theme.c3);
-  accentColor = theme.c3;
-}
-
-function loadSavedTheme() {
-  console.log("running")
-  const savedName = localStorage.getItem(STORAGE_KEY);
-  if (savedName && THEMES[savedName]) {
-    applyTheme(THEMES[savedName]);
-  }
-}
-
-
-
-
 
 function showEye() {
   const eye = document.createElement("div");
