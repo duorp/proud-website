@@ -54,7 +54,7 @@
   <section class="grid">
   <% projects.forEach(p => { %>
     <article class="card card--<%= p.span %>" >
-    <a href="<%= p.type === 'c' ? '/under-construction' : '/p/' + p.slug %>">
+    <a href="<%= p.type === 'c' ? '/under-construction' : p.type === 'r' ? p.redirect : '/p/' + p.slug %>">
       <div
         class="card__image"
         style="--ratio: <%= p.ratio %>;"

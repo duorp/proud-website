@@ -47,13 +47,14 @@ module.exports = [
         tags: ["Editorial", "Illustration"]
   },
     {
-    type: "c",
-    slug: "doherty-hall",
-    title: "One Thousand Mornings at Doherty Hall",
+    type: "r",
+    redirect: "https://grimshaw.global/projects/education-and-science/hybrid-futures-architecture-for-people-place-and-planet/",
+    slug: "hybrid-futures",
+    title: "Hybrid Futures: Architecture for People, Place, and Planet",
     subtitle: "",
     span: "medium",
     ratio: "4/3",
-        tags: ["Data", "Brand"]
+        tags: ["Motion"]
   },
     {
     type: "p",
@@ -74,7 +75,8 @@ module.exports = [
         tags: ["UX","Data", "Code"
         ]
   },{
-    type: "p",
+    type: "r",
+    redirect: "https://www.observablehq.com/collection/@ptaranat/d3",
     slug: "d3",
     title: "Data Visualizations",
     subtitle: "A collection of data visualizations I’ve designed and programmed with D3.",
