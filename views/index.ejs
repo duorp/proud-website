@@ -19,7 +19,7 @@
 <section class="project-index">
   <% projects.forEach(p => { %>
     <article class="card" >
-    <a href="/<%= p.type %>/<%= p.slug %>">
+    <a href="<%= p.type === 'c' ? '/under-construction' : p.type === 'r' ? p.redirect : '/p/' + p.slug %>">
       <div
         class="card__image"
         style="--ratio: 16/9;"
