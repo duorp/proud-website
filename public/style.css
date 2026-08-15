@@ -144,6 +144,7 @@ p {
   src: url("fonts/PPWriter-Thin.otf") format("opentype");
   font-weight: 100;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -151,6 +152,7 @@ p {
   src: url("fonts/ABCOracle-Regular-Trial.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -158,6 +160,7 @@ p {
   src: url("fonts/ABCOracle-Medium-Trial.woff2") format("woff2");
   font-weight: 500;
   font-style: normal;
+  font-display: swap;
 }
 
 
