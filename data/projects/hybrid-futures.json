@@ -1,0 +1,29 @@
+{
+  "title": "Hybrid Futures",
+  "headline": "Art direction and motion graphics for a video about the future of hybrid research facilities.",
+  "description": "",
+  "hero_image": "/images/hybrid-futures.jpg",
+  "tags": ["Art Direction", "Motion Graphics"],
+  "blocks": [
+    { "type": "custom", "content": "PGRpdiBzdHlsZT0icGFkZGluZzo1Ni4yNSUgMCAwIDA7cG9zaXRpb246cmVsYXRpdmU7Ij48aWZyYW1lIHNyYz0iaHR0cHM6Ly9wbGF5ZXIudmltZW8uY29tL3ZpZGVvLzEwOTI3OTkyMTc/YmFkZ2U9MCZhbXA7YXV0b3BhdXNlPTAmYW1wO3BsYXllcl9pZD0wJmFtcDthcHBfaWQ9NTg0NzkiIGZyYW1lYm9yZGVyPSIwIiBhbGxvdz0iYXV0b3BsYXk7IGZ1bGxzY3JlZW47IHBpY3R1cmUtaW4tcGljdHVyZTsgY2xpcGJvYXJkLXdyaXRlOyBlbmNyeXB0ZWQtbWVkaWE7IHdlYi1zaGFyZSIgcmVmZXJyZXJwb2xpY3k9InN0cmljdC1vcmlnaW4td2hlbi1jcm9zcy1vcmlnaW4iIHN0eWxlPSJwb3NpdGlvbjphYnNvbHV0ZTt0b3A6MDtsZWZ0OjA7d2lkdGg6MTAwJTtoZWlnaHQ6MTAwJTsiIHRpdGxlPSJIeWJyaWQgRnV0dXJlczogQXJjaGl0ZWN0dXJlIGZvciBQZW9wbGUsIFBsYWNlIGFuZCBQbGFuZXQiPjwvaWZyYW1lPjwvZGl2PjxzY3JpcHQgc3JjPSJodHRwczovL3BsYXllci52aW1lby5jb20vYXBpL3BsYXllci5qcyI+PC9zY3JpcHQ+" },
+     {
+      "type": "image",
+      "size":"large",
+      "images": [
+        {
+          "src": "/images/hybrid-futures/1.png",
+          "grow": "1"
+        },
+        {
+          "src": "/images/hybrid-futures/2.png",
+          "grow": "1"
+        },
+           {
+          "src": "/images/hybrid-futures/3.png",
+          "grow": "1"
+        }
+      ]
+    }
+
+  ]
+}

@@ -47,8 +47,7 @@ module.exports = [
         tags: ["Editorial", "Illustration"]
   },
     {
-    type: "r",
-    redirect: "https://grimshaw.global/projects/education-and-science/hybrid-futures-architecture-for-people-place-and-planet/",
+    type: "p",
     slug: "hybrid-futures",
     title: "Hybrid Futures: Architecture for People, Place, and Planet",
     subtitle: "",
