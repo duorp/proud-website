@@ -599,6 +599,26 @@ max-width: none;
 object-fit: contain;
 }
 
+/* one offs */
+#poster-tile-2 {
+  display: grid;
+  grid-template-columns: repeat(2, auto); /* 2 wide */
+  grid-template-rows: repeat(3, 25vh);    /* 3 tall: 3 x 25vh = 75vh total */
+  width: max-content;                     /* shrink-wrap to the images (good for Panzoom) */
+  height: 75vh;
+  gap: 0;
+  overflow: hidden;
+  
+}
+
+#poster-tile-2 img {
+  display: block;
+  height: 100%;        /* fill the 25vh row */
+  width: auto;
+  max-width: none;
+  object-fit: contain;
+}
+
 
 /* landing */
 .landing__text{

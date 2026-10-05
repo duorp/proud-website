@@ -1,0 +1,10 @@
+{
+  "title": "Sustainability Infographic",
+  "headline": "Sustainability & Regenerative Design Case Studies",
+  "description": "These two four-foot-tall posters were designed using content developed by our sustainability and marketing team. They cover Via Verde, a South Bronx affordable housing scheme, and the Dubai Expo 2020 Sustainability Pavilion. Each pairs a hero image and title with large key metrics, UN Sustainable Development Goals, and a detailed axonometric diagram that turns technical content into a clear, scannable layout. The posters are currently on display at Grimshaw's New York office. <br><br> <strong>Click, pan, and zoom to explore the poster up close. (Works better on desktop)</strong>",
+  "hero_image": "/images/abortion-infographic.jpg",
+  "tags": ["Data"],
+  "blocks": [
+    { "type": "custom", "content": "IDxkaXYgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6ICM0MzQzNDM7IGhlaWdodDogMTAwJTsgd2lkdGg6IDEwMCU7Ij4KICAgICAgIDxkaXYgaWQ9InBvc3Rlci10aWxlLTIiPgogICAgICAgICAgICA8aW1nIHNyYz0iXGltYWdlc1xzdXN0YWluYWJpbGl0eS1pbmZvZ3JhcGhpY1wxLmpwZyI+CiAgICAgICAgICAgIDxpbWcgc3JjPSJcaW1hZ2VzXHN1c3RhaW5hYmlsaXR5LWluZm9ncmFwaGljXDIuanBnIj4KICAgICAgICAgICAgPGltZyBzcmM9IlxpbWFnZXNcc3VzdGFpbmFiaWxpdHktaW5mb2dyYXBoaWNcMy5qcGciPgogICAgICAgICAgICA8aW1nIHNyYz0iXGltYWdlc1xzdXN0YWluYWJpbGl0eS1pbmZvZ3JhcGhpY1w0LmpwZyI+CiAgICAgICAgICAgIDxpbWcgc3JjPSJcaW1hZ2VzXHN1c3RhaW5hYmlsaXR5LWluZm9ncmFwaGljXDUuanBnIj4KICAgICAgICAgICAgPGltZyBzcmM9IlxpbWFnZXNcc3VzdGFpbmFiaWxpdHktaW5mb2dyYXBoaWNcNi5qcGciPgogICAgICAgICAgPC9kaXY+CiAgICAgICAgICA8L2Rpdj4=" }
+  ]
+}

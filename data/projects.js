@@ -8,6 +8,14 @@ module.exports = [
     ratio: "16/9",
     tags: ["Data", "Editorial"]
   },
+     { type: "p",
+    slug: "sustainability-infographic",
+    title: "Regenerative Design Case Studies",
+    subtitle: "",
+    span: "medium",
+    ratio: "4/3",
+    tags: ["Data"]
+  },
   {
     type: "p",
     slug: "dotdash-meredith",
@@ -31,7 +39,7 @@ module.exports = [
     slug: "acclimate-ventures",
     title: "Acclimate Ventures",
     subtitle: "",
-    span: "large",
+    span: "medium",
     ratio: "16/8",
         tags: ["Brand","UX"]
   },
