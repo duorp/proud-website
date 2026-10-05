@@ -167,15 +167,22 @@ function wrapChars(text, wordClass = "word", charClass = "char") {
 }
 //COLOR PALETTES
 
+const MAX_EYES = 20;
+let eyeCount = 0;
+
 function showEye() {
+  if (eyeCount >= MAX_EYES) return; // stop once we hit 20
+
   const eye = document.createElement("div");
   eye.classList.add("eye");
   eye.style.left = `${Math.random() * 100}vw`;
   eye.style.top = `${Math.random() * 100}vh`;
   document.body.appendChild(eye);
+  eyeCount++;
 
-
-  // keep spawning more while still idle
-  idleTimer = setTimeout(showEye, 30000);
+  // keep spawning more while still idle, until we reach the max
+  if (eyeCount < MAX_EYES) {
+    idleTimer = setTimeout(showEye, 30000);
+  }
 }
 
