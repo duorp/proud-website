@@ -1,5 +1,13 @@
 module.exports = [
-  {
+  {   type: "p",
+    slug: "grimshaw-pursuits",
+    title: "Architectural Proposals",
+    subtitle: "Proposals I designed under Grimshaw's business development team.",
+    span: "medium",
+    ratio: "16/9",
+    tags: ["Editorial"]
+  },
+      {
     type: "p",
     slug: "abortion-infographic",
     title: "Abortion Infographic",
@@ -8,14 +16,16 @@ module.exports = [
     ratio: "16/9",
     tags: ["Data", "Editorial"]
   },
+
      { type: "p",
     slug: "sustainability-infographic",
     title: "Regenerative Design Case Studies",
     subtitle: "",
-    span: "medium",
-    ratio: "4/3",
+    span: "large",
+    ratio: "16/9",
     tags: ["Data"]
   },
+
   {
     type: "p",
     slug: "dotdash-meredith",
@@ -25,6 +35,7 @@ module.exports = [
     ratio: "4/3",
         tags: ["Editorial", "Brand","UX"]
   },
+
     {
     type: "p",
     slug: "data-driven-textiles",
@@ -65,15 +76,6 @@ module.exports = [
   },
     {
     type: "p",
-    slug: "role-play",
-    title: "Role Play Magazine",
-    subtitle: "",
-    span: "large",
-    ratio: "16/9",
-        tags: ["Editorial", "Identity"]
-  },
-    {
-    type: "p",
     slug: "uncover-aiga",
     title: "Uncover AIGA",
     subtitle: "",
@@ -81,7 +83,17 @@ module.exports = [
     ratio: "4/3",
         tags: ["UX","Data", "Code"
         ]
-  },{
+  },
+    {
+    type: "p",
+    slug: "role-play",
+    title: "Role Play Magazine",
+    subtitle: "",
+    span: "large",
+    ratio: "16/9",
+        tags: ["Editorial", "Identity"]
+  },
+  {
     type: "r",
     redirect: "https://www.observablehq.com/collection/@ptaranat/d3",
     slug: "d3",
@@ -96,7 +108,7 @@ module.exports = [
     slug: "no-dont-die",
     title: "Don't Die Interview Archive",
     subtitle: "",
-    span: "large",
+    span: "medium",
     ratio: "16/9",
         tags: ["Editorial","Code"]
   }
