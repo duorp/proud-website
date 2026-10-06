@@ -234,7 +234,6 @@ app.get("/under-construction", (req, res) => {
 // routes/decap-auth.js
 
 const crypto = require("crypto");
-
 const router = express.Router();
 
 const CLIENT_ID = process.env.GITHUB_CLIENT_ID;
@@ -314,4 +313,6 @@ router.get("/callback", async (req, res) => {
   </script></body></html>`);
 });
 
-module.exports = router;
+app.use(router);          // <- mount the router on the app
+
+module.exports = app;     // <- export the app, NOT the router
