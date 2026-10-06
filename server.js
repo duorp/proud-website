@@ -49,19 +49,17 @@ app.listen(PORT, () => {
 
 });
 
-// projects page route
 app.get("/p/:slug", (req, res) => {
   const slug = req.params.slug;
   const filePath = `${__dirname}/data/projects/${slug}.json`;
-  console.log("Trying to load JSON file:", filePath);
 
   try {
     const project = JSON.parse(fs.readFileSync(filePath, "utf-8"));
 
-    // Decode Base64 for any custom HTML blocks
-    project.blocks.forEach(block => {
-      if (block.type === "custom") {
-        block.content = Buffer.from(block.content, 'base64').toString('utf-8');
+    // Only decode legacy base64 blocks; real HTML always contains "<"
+    project.blocks.forEach((block) => {
+      if (block.type === "custom" && !block.content.includes("<")) {
+        block.content = Buffer.from(block.content, "base64").toString("utf-8");
       }
     });
 
@@ -71,7 +69,6 @@ app.get("/p/:slug", (req, res) => {
     res.status(404).send("Project not found");
   }
 });
-
 
 // gallery route
 app.get("/gallery", (req, res) => {

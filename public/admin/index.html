@@ -10,3 +10,49 @@
     <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
   </body>
 </html>
+<script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+<script>
+  // 1. Load your site's CSS into the preview iframe
+  CMS.registerPreviewStyle("/style.css");
+  CMS.registerPreviewStyle("https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css");
+
+  // 2. Rebuild the project page from the entry's fields
+  var ProjectPreview = createClass({
+    render: function () {
+      var entry = this.props.entry;
+      var blocks = (entry.getIn(["data", "blocks"]) || []).toJS
+        ? entry.getIn(["data", "blocks"]).toJS()
+        : [];
+      var getAsset = this.props.getAsset;
+
+      return h("main", { className: "main-content project-page" },
+        h("section", { className: "project-page__hero" },
+          h("h2", {}, entry.getIn(["data", "headline"])),
+          h("p", { dangerouslySetInnerHTML: { __html: entry.getIn(["data", "description"]) } })
+        ),
+        h("section", { className: "project-page" },
+          blocks.map(function (block) {
+            if (block.type === "text") {
+              return h("div", { className: "block block--text",
+                dangerouslySetInnerHTML: { __html: block.content } });
+            }
+            if (block.type === "image") {
+              return h("div", { className: "block image--" + (block.size || "medium") },
+                (block.images || []).map(function (img) {
+                  return h("img", { src: getAsset(img.src).toString(),
+                    style: { flexGrow: img.grow || 1 } });
+                })
+              );
+            }
+            if (block.type === "custom") {
+              return h("div", { className: "block--custom",
+                dangerouslySetInnerHTML: { __html: block.content } });
+            }
+          })
+        )
+      );
+    }
+  });
+
+  CMS.registerPreviewTemplate("projects", ProjectPreview);  // "projects" = collection name in config.yml
+</script>
