@@ -581,6 +581,26 @@ display: flex;
   flex-direction:column;
 }
 
+.block--text:has(> .eyebrow) {
+  display: grid;
+  grid-template-columns: 1fr 3fr;  /* eyebrow column | body column */
+  column-gap: 2rem;
+  align-items: start;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.block--text .eyebrow {
+  grid-column: 1;
+}
+
+/* stack on small screens */
+@media (max-width: 700px) {
+  .block--text:has(> .eyebrow) {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* one offs */
 #poster-tile {
   height: 75vh;
@@ -813,6 +833,25 @@ display: none
   object-fit: contain;
   display: block;
 }
+.mySwiper .swiper-button-prev,
+.mySwiper .swiper-button-next {
+  width: 48px;                      /* circle size */
+  height: 48px;
+  color:#FFFFFF;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  display: flex;                    /* center the arrow inside the circle */
+  align-items: center;
+  justify-content: center;
+}
+
+/* arrow icon (Swiper 12 uses an inline SVG) */
+.mySwiper .swiper-button-prev svg,
+.mySwiper .swiper-button-next svg {
+  width: 16px;                      /* smaller than the circle */
+  height: 16px;
+}
+
 
 .block--custom {
   width: 100%;

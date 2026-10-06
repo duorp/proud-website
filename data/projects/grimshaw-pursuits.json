@@ -1,12 +1,27 @@
 {
   "title": "Architectural Proposals",
-  "headline": " Helping The Balance bring financial literacy to a new generation of users. ",
-  "description": "The Balance is a website focused on simplifying personal finance topics and news. The team is currently rebranding to refresh the existing identity and make the site more appealing to a younger generation of users. To kickstart this effort, I spearheaded the rebranding of the site’s advice column, My Two Cents.",
+  "headline": "Editorial Design for Architectural Proposals and SOQs",
+  "description": "As a graphic designer on Grimshaw's business development and marketing team, I led graphic production for a range of architectural pursuits, developing a custom brand identity and visual language for each client. <br><br>Beyond pursuits, my work spanned infographics, deck design, branded marketing materials, and motion graphics. As one of only two graphic designers for the North America region, I was the go-to person for all things graphic in the studio, including architectural report submissions totaling more than 1,000 pages.<br><br><strong>Information within the documents shown below that is not publicly available has been redacted. To see the work in full, please reach out to me directly.</strong><br><br>Team: Maddie Symons, Graphic Design Manager",
   "hero_image": "/grimshaw-pursuits.jpg",
   "tags": [
     "Data",
     "Editorial"
   ],
-  "blocks": [
+  "blocks": [{
+      "type": "text",
+      "content": "<span class=\"eyebrow\">Qiddiya Gaming& Esports Precinct Masterplan</span>\r\nThe Qiddiya development is a transformative undertaking, set to become the Kingdom’s capital of entertainment, sports, and the arts. Located 28 miles from Riyadh, the project spans the dramatic Tuwaiq mountain cliffs and will support a residential population exceeding 600,000. Grimshaw was invited to submit a proposal for the Masterplan of the precinct. "
+    }, {"type":"custom",
+  "content": "ICA8ZGl2IGNsYXNzPSJzd2lwZXIgbXlTd2lwZXIiPgogICAgPGRpdiBjbGFzcz0ic3dpcGVyLXdyYXBwZXIiPgogICAgICA8ZGl2IGNsYXNzPSJzd2lwZXItc2xpZGUiPjxpbWcgc3JjPSIvaW1hZ2VzL2dyaW1zaGF3LXB1cnN1aXRzL3FpZGRpeWFfbG9vcC5naWYiPjwvZGl2PgogICAgICA8ZGl2IGNsYXNzPSJzd2lwZXItc2xpZGUiPjxpbWcgc3JjPSIvaW1hZ2VzL2dyaW1zaGF3LXB1cnN1aXRzL3FpZGRpeWEgMS5qcGciPjwvZGl2PgogICAgICA8ZGl2IGNsYXNzPSJzd2lwZXItc2xpZGUiPjxpbWcgc3JjPSIvaW1hZ2VzL2dyaW1zaGF3LXB1cnN1aXRzL3FpZGRpeWEgMi5qcGciPjwvZGl2PgogICAgICA8ZGl2IGNsYXNzPSJzd2lwZXItc2xpZGUiPjxpbWcgc3JjPSIvaW1hZ2VzL2dyaW1zaGF3LXB1cnN1aXRzL3FpZGRpeWEgMy5qcGciPjwvZGl2PgoKICAgIDwvZGl2PgogICAgPGRpdiBjbGFzcz0ic3dpcGVyLXBhZ2luYXRpb24iPjwvZGl2PgogIDwvZGl2Pg=="},
+  {
+      "type": "text",
+      "content": "<span class=\"eyebrow\">The New York City Department of Sanitation (DSNY)</span>\r\nThe New York City Department of Sanitation (DSNY) plans to replace the current 90-year old sanitation garage in Astoria with a new, 93,700sqft facility and a 20,000sqft salt shed. The development will introduce increased traffic safety and clean air to the western queens community. The look-and-feel for this proposal was inspired by several landmarks in Astoria, particularly at the construction site. The site’s waterfront location presented a unique opportunity for landscape restoration, a feature I sought to highlight in the overall look-and-feel."
+    }, {"type":"custom",
+  "content": "ICA8ZGl2IGNsYXNzPSJzd2lwZXIgbXlTd2lwZXIiPgogICAgPGRpdiBjbGFzcz0ic3dpcGVyLXdyYXBwZXIiPgogICAgICA8ZGl2IGNsYXNzPSJzd2lwZXItc2xpZGUiPjxpbWcgc3JjPSIvaW1hZ2VzL2dyaW1zaGF3LXB1cnN1aXRzL2RzbnlfbG9vcC5naWYiPjwvZGl2PgogICAgICA8ZGl2IGNsYXNzPSJzd2lwZXItc2xpZGUiPjxpbWcgc3JjPSIvaW1hZ2VzL2dyaW1zaGF3LXB1cnN1aXRzL2RzbnkxLmpwZyI+PC9kaXY+CiAgICAgIDxkaXYgY2xhc3M9InN3aXBlci1zbGlkZSI+PGltZyBzcmM9Ii9pbWFnZXMvZ3JpbXNoYXctcHVyc3VpdHMvZHNueTIuanBnIj48L2Rpdj4KPGRpdiBjbGFzcz0ic3dpcGVyLXNsaWRlIj48aW1nIHNyYz0iL2ltYWdlcy9ncmltc2hhdy1wdXJzdWl0cy9kc255NC5qcGciPjwvZGl2Pgo8ZGl2IGNsYXNzPSJzd2lwZXItc2xpZGUiPjxpbWcgc3JjPSIvaW1hZ2VzL2dyaW1zaGF3LXB1cnN1aXRzL2Rzbnk1LmpwZyI+PC9kaXY+CjxkaXYgY2xhc3M9InN3aXBlci1zbGlkZSI+PGltZyBzcmM9Ii9pbWFnZXMvZ3JpbXNoYXctcHVyc3VpdHMvZHNueTYuanBnIj48L2Rpdj4KCiAgICA8L2Rpdj4KICAgICA8ZGl2IGNsYXNzPSJzd2lwZXItYnV0dG9uLXByZXYiPjwvZGl2PgogIDxkaXYgY2xhc3M9InN3aXBlci1idXR0b24tbmV4dCI+PC9kaXY+CiAgPC9kaXY+"},
+  
+  {
+      "type": "text",
+      "content": "<span class=\"eyebrow\">Long Island Macarthur Airport</span>\r\nThe Long Island MacArthur Airport (ISP) terminal development project will connect a new airline terminal to the adjacent Long Island Rail Road (LIRR), connecting Islip to the NYC Metro area and greater Long Island. Grimshaw was positioned as the design architect for this developer-led SOQ. "
+    }, {"type":"custom",
+  "content": "ICA8ZGl2IGNsYXNzPSJzd2lwZXIgbXlTd2lwZXIiPgogICAgPGRpdiBjbGFzcz0ic3dpcGVyLXdyYXBwZXIiPgogICAgICA8ZGl2IGNsYXNzPSJzd2lwZXItc2xpZGUiPjxpbWcgc3JjPSIvaW1hZ2VzL2dyaW1zaGF3LXB1cnN1aXRzL2lzcDEuanBnIj48L2Rpdj4KICAgICAgPGRpdiBjbGFzcz0ic3dpcGVyLXNsaWRlIj48aW1nIHNyYz0iL2ltYWdlcy9ncmltc2hhdy1wdXJzdWl0cy9pc3AyLmpwZyI+PC9kaXY+CiAgICAgIDxkaXYgY2xhc3M9InN3aXBlci1zbGlkZSI+PGltZyBzcmM9Ii9pbWFnZXMvZ3JpbXNoYXctcHVyc3VpdHMvaXNwMy5qcGciPjwvZGl2PgogICAgICA8ZGl2IGNsYXNzPSJzd2lwZXItc2xpZGUiPjxpbWcgc3JjPSIvaW1hZ2VzL2dyaW1zaGF3LXB1cnN1aXRzL2lzcDQuanBnIj48L2Rpdj4KICAgICAgPGRpdiBjbGFzcz0ic3dpcGVyLXNsaWRlIj48aW1nIHNyYz0iL2ltYWdlcy9ncmltc2hhdy1wdXJzdWl0cy9pc3A1LmpwZyI+PC9kaXY+CgoKICAgIDwvZGl2PgogICAgPGRpdiBjbGFzcz0ic3dpcGVyLXBhZ2luYXRpb24iPjwvZGl2PgogIDwvZGl2Pg=="}
   ]
 }
