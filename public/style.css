@@ -23,6 +23,10 @@ svg * {
   --max-width: 2160px;
 }
 
+strong {
+  font-weight: 600;
+}
+
 /* Chrome, Edge, Safari */
 ::-webkit-scrollbar {
   width: 6px;

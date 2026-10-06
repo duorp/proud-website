@@ -1,7 +1,7 @@
 {
   "title": "Architectural Proposals",
   "headline": "Editorial Design for Architectural Proposals and SOQs",
-  "description": "As a graphic designer on Grimshaw's business development and marketing team, I led graphic production for a range of architectural pursuits, developing a custom brand identity and visual language for each client. <br><br>Beyond pursuits, my work spanned infographics, deck design, branded marketing materials, and motion graphics. As one of only two graphic designers for the North America region, I was the go-to person for all things graphic in the studio, including architectural report submissions totaling more than 1,000 pages.<br><br><strong>Information within the documents shown below that is not publicly available has been redacted. To see the work in full, please reach out to me directly.</strong>",
+  "description": "As a graphic designer on Grimshaw's business development and marketing team, I led graphic production for a range of architectural pursuits, developing a custom brand identity and visual language for each client. <br><br>Beyond pursuits, my work spanned infographics, deck design, branded marketing materials, and motion graphics. As one of only two graphic designers for the North America region, I was the go-to person for all things graphic in the studio, including architectural report submissions totaling more than 1,000 pages.<br><br><strong>Information within the documents shown below that is not publicly available has been redacted. To see the work in full, including my other contributions at Grimshaw, please reach out to me directly.</strong>",
   "hero_image": "/grimshaw-pursuits.jpg",
   "tags": [
     "Data",
@@ -31,6 +31,22 @@
     {
       "type": "custom",
       "content": "  <div class=\"swiper mySwiper\">\n    <div class=\"swiper-wrapper\">\n      <div class=\"swiper-slide\"><img src=\"/images/grimshaw-pursuits/isp1.jpg\"></div>\n      <div class=\"swiper-slide\"><img src=\"/images/grimshaw-pursuits/isp2.jpg\"></div>\n      <div class=\"swiper-slide\"><img src=\"/images/grimshaw-pursuits/isp3.jpg\"></div>\n      <div class=\"swiper-slide\"><img src=\"/images/grimshaw-pursuits/isp4.jpg\"></div>\n      <div class=\"swiper-slide\"><img src=\"/images/grimshaw-pursuits/isp5.jpg\"></div>\n\n\n    </div>\n      <div class=\"swiper-button-prev\"></div>\n  <div class=\"swiper-button-next\"></div>\n  </div>"
+    },
+    {
+      "type": "text",
+      "content": "<span class=\"eyebrow\">Colby College New Science Complex</span>\nColby recently announced it will invest half a billion dollars in science and technology, including a $300-million state-of-the-art science complex to address current and future science,  educational, and research needs. "
+    },
+    {
+      "type": "custom",
+      "content": "  <div class=\"swiper mySwiper\">\n    <div class=\"swiper-wrapper\">\n      <div class=\"swiper-slide\"><img src=\"/images/grimshaw-pursuits/colby1.jpg\"></div>\n      <div class=\"swiper-slide\"><img src=\"/images/grimshaw-pursuits/colby2.jpg\"></div>\n      <div class=\"swiper-slide\"><img src=\"/images/grimshaw-pursuits/colby3.jpg\"></div>\n      <div class=\"swiper-slide\"><img src=\"/images/grimshaw-pursuits/colby4.jpg\"></div>\n      <div class=\"swiper-slide\"><img src=\"/images/grimshaw-pursuits/colby5.jpg\"></div>\n\n\n    </div>\n      <div class=\"swiper-button-prev\"></div>\n  <div class=\"swiper-button-next\"></div>\n  </div>"
+    },
+    {
+      "type": "text",
+      "content": "<span class=\"eyebrow\">NYC School Construction Authority</span>\nGrimshaw has submitted multiple proposals for A/E services in connection with capacity projects for the School Construction Authority. The images below are a mix of layouts utilizing the templates I created for the pursuit. "
+    },
+    {
+      "type": "custom",
+      "content": "  <div class=\"swiper mySwiper\">\n    <div class=\"swiper-wrapper\">\n      <div class=\"swiper-slide\"><img src=\"/images/grimshaw-pursuits/sca1.jpg\"></div>\n      <div class=\"swiper-slide\"><img src=\"/images/grimshaw-pursuits/sca2.jpg\"></div>\n      <div class=\"swiper-slide\"><img src=\"/images/grimshaw-pursuits/sca3.jpg\"></div>\n      <div class=\"swiper-slide\"><img src=\"/images/grimshaw-pursuits/sca4.jpg\"></div>\n      <div class=\"swiper-slide\"><img src=\"/images/grimshaw-pursuits/sca5.jpg\"></div>\n      <div class=\"swiper-slide\"><img src=\"/images/grimshaw-pursuits/sca6.jpg\"></div>\n\n\n    </div>\n      <div class=\"swiper-button-prev\"></div>\n  <div class=\"swiper-button-next\"></div>\n  </div>"
     }
   ]
 }
