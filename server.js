@@ -230,3 +230,91 @@ console.log("DATABASE_URL set?", Boolean(process.env.DATABASE_URL));
 app.get("/under-construction", (req, res) => {
   res.render("under-construction");
 });
+
+
+
+//test
+// routes/decap-auth.js
+
+const crypto = require("crypto");
+
+const router = express.Router();
+
+const CLIENT_ID = process.env.GITHUB_CLIENT_ID;
+const CLIENT_SECRET = process.env.GITHUB_CLIENT_SECRET;
+const SITE_URL = process.env.SITE_URL; // e.g. https://proudtaranat.vercel.app
+
+// small helper to read the state cookie without extra packages
+function getCookie(req, name) {
+  const match = (req.headers.cookie || "").match(new RegExp(`(?:^|; )${name}=([^;]*)`));
+  return match ? decodeURIComponent(match[1]) : null;
+}
+
+// Step 1: Decap opens /auth in a popup -> send the user to GitHub
+router.get("/auth", (req, res) => {
+  const state = crypto.randomBytes(16).toString("hex");
+  res.cookie("oauth_state", state, {
+    httpOnly: true,
+    secure: true,
+    sameSite: "lax",
+    maxAge: 10 * 60 * 1000,
+  });
+
+  const params = new URLSearchParams({
+    client_id: CLIENT_ID,
+    redirect_uri: `${SITE_URL}/callback`,
+    scope: "public_repo",            // use "public_repo" if your repo is public
+    state,
+  });
+  res.redirect(`https://github.com/login/oauth/authorize?${params}`);
+});
+
+// Step 2: GitHub sends the user back here with a code
+router.get("/callback", async (req, res) => {
+  const { code, state } = req.query;
+
+  if (!code || !state || state !== getCookie(req, "oauth_state")) {
+    return res.status(400).send("Invalid OAuth state");
+  }
+
+  let status = "error";
+  let content = { message: "Authentication failed" };
+
+  try {
+    const tokenRes = await fetch("https://github.com/login/oauth/access_token", {
+      method: "POST",
+      headers: { "Content-Type": "application/json", Accept: "application/json" },
+      body: JSON.stringify({
+        client_id: CLIENT_ID,
+        client_secret: CLIENT_SECRET,
+        code,
+        redirect_uri: `${SITE_URL}/callback`,
+      }),
+    });
+    const data = await tokenRes.json();
+
+    if (data.access_token) {
+      status = "success";
+      content = { token: data.access_token, provider: "github" };
+    }
+  } catch (err) {
+    console.error("[decap-auth]", err);
+  }
+
+  // Step 3: hand the result back to the Decap admin window
+  res.send(`<!doctype html><html><body><script>
+    (function () {
+      function receive(e) {
+        window.opener.postMessage(
+          'authorization:github:${status}:' + ${JSON.stringify(JSON.stringify(content))},
+          e.origin
+        );
+        window.removeEventListener("message", receive, false);
+      }
+      window.addEventListener("message", receive, false);
+      window.opener.postMessage("authorizing:github", "*");
+    })();
+  </script></body></html>`);
+});
+
+module.exports = router;

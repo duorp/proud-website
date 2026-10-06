@@ -1,0 +1,87 @@
+backend:
+  name: github
+  repo: duorp/proud-website
+  branch: pursuits-project
+  base_url: http://localhost:3000
+  auth_endpoint: auth        
+
+local_backend: true
+
+media_folder: public/images        # verify: wherever your /images/... files live
+public_folder: /images
+
+collections:
+  - name: projects
+    label: Projects
+    label_singular: Project
+    folder: data/projects
+    extension: json
+    format: json
+    create: true
+    slug: "{{slug}}"
+    identifier_field: title
+    fields:
+      - { label: Title, name: title, widget: string }
+      - { label: Headline, name: headline, widget: string }
+      - { label: Description, name: description, widget: text, required: false, hint: "HTML allowed (<br>, <strong>…)" }
+      - { label: Hero image, name: hero_image, widget: image, required: false }
+      - label: Tags
+        name: tags
+        widget: list
+        field: { label: Tag, name: tag, widget: string }
+      - label: Blocks
+        name: blocks
+        widget: list
+        types:
+          - label: Text
+            name: text
+            widget: object
+            fields:
+              - { label: Content, name: content, widget: text, hint: "HTML allowed, e.g. <span class=\"eyebrow\">…</span>" }
+          - label: Image group
+            name: image
+            widget: object
+            fields:
+              - { label: Size, name: size, widget: select, options: [small, medium, large], default: medium }
+              - label: Images
+                name: images
+                widget: list
+                fields:
+                  - { label: Image, name: src, widget: image }
+                  - { label: Grow, name: grow, widget: number, required: false, default: 1 }
+          - label: Custom HTML
+            name: custom
+            widget: object
+            fields:
+              - { label: Content, name: content, widget: text }
+
+  - name: blog
+    label: Blog
+    label_singular: Post
+    folder: data/blog
+    extension: json
+    format: json
+    create: true
+    slug: "{{slug}}"
+    identifier_field: title
+    fields:
+      # I only saw one blog file, and it used the same shape as projects.
+      # Adjust if your blog template expects different fields.
+      - { label: Title, name: title, widget: string }
+      - { label: Headline, name: headline, widget: string, required: false }
+      - { label: Description, name: description, widget: text, required: false }
+      - { label: Hero image, name: hero_image, widget: image, required: false }
+      - label: Tags
+        name: tags
+        widget: list
+        required: false
+        field: { label: Tag, name: tag, widget: string }
+      - label: Blocks
+        name: blocks
+        widget: list
+        types:
+          - label: Text
+            name: text
+            widget: object
+            fields:
+              - { label: Content, name: content, widget: text }
