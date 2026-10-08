@@ -11,70 +11,84 @@
     {
       "type": "text",
       "content": "<span class=\"eyebrow\">BRAND</span>As the Balance was working towards a fresher, more bold brand identity, I kicked off their rebrand project by developing a sub-brand for My Two Cents."
-      
     },
     {
-      
-        "type": "image",
-        "images": [
-          {
-            "src": "/images/the-balance/Brand.png",
-            "grow": "1"
-          }
-        ]
-      },
-      {
-        "type": "text",
-        "content": "<span class=\"eyebrow\">EDITORIAL SYSTEM</span><p>Along with this rebrand, I developed a design system to allow editorial teams to rapidly generate recirculation images that differentiated MTC from other content on the site. You can see these images in action <a href='https://www.thebalancemoney.com/personal-stories-6265547'>here.</a></p>"
-        
-      },
-      {
-      
-        "type": "image",
-        "images": [
-          {
-            "src": "/images/the-balance/IDontHaveEnoughSavedforRetirement.NowWhat_-eb8cdef8d968471ea11557f3317ce94e.png",
-            "grow": "1"
-          },
-          {
-            "src": "/images/the-balance/ImaSingleMom.HowCanIHelpMySonPayForCollege_-05dbe360abd445ef97612c9af93299ca.png",
-            "grow": "1"
-          },
-          {
-            "src": "/images/the-balance/MyBoyfriendandICantGetOutofDebt.WhatDoWeDo_-58f98fff46e84d56b648a47a12a181be.png",
-            "grow": "1"
-          }
-        ]
-      },
-     
-      {
-      
-        "type": "image",
-        "size":"large",
-        "images": [
-          {
-            "src": "/images/the-balance/article1.png",
-            "grow": "1"
-          },
-          {
-            "src": "/images/the-balance/article2.png",
-            "grow": "1"
-          }
-        ]
-      },
-      {"type": "text",
-    "content":"<span class=\"eyebrow\">SOCIAL</span>I developed a number of templates for My Two Cents to highlight its headlines and images. <br><br>I also adopted a social media strategy that emphasized content that could be natively shared within the app, as opposed to through a link in bio."},
-      {
-      
-        "type": "image",
-        "size":"large",
-        "images": [
-          {
-            "src": "/images/the-balance/frames.png",
-            "grow": "1"
-          }
-        ]
-      }
-  
+      "type": "image",
+      "images": [
+        {
+          "src": "/images/the-balance/Brand.png",
+          "grow": "1"
+        }
+      ],
+      "size": "medium"
+    },
+    {
+      "type": "text",
+      "content": "<span class=\"eyebrow\">EDITORIAL SYSTEM</span><p>Along with this rebrand, I developed a design system to allow editorial teams to rapidly generate recirculation images that differentiated MTC from other content on the site. You can see these images in action <a href='https://www.thebalancemoney.com/personal-stories-6265547'>here.</a></p>"
+    },
+    {
+      "type": "image",
+      "images": [
+        {
+          "src": "/images/the-balance/IDontHaveEnoughSavedforRetirement.NowWhat_-eb8cdef8d968471ea11557f3317ce94e.png",
+          "grow": "1"
+        },
+        {
+          "src": "/images/the-balance/ImaSingleMom.HowCanIHelpMySonPayForCollege_-05dbe360abd445ef97612c9af93299ca.png",
+          "grow": "1"
+        },
+        {
+          "src": "/images/the-balance/MyBoyfriendandICantGetOutofDebt.WhatDoWeDo_-58f98fff46e84d56b648a47a12a181be.png",
+          "grow": "1"
+        }
+      ],
+      "size": "large"
+    },
+    {
+      "type": "image",
+      "size": "large",
+      "images": [
+        {
+          "grow": 1,
+          "src": "/images/the-balance/dog.webp"
+        },
+        {
+          "grow": 1,
+          "src": "/images/the-balance/emergency-fund.webp"
+        },
+        {
+          "grow": 1,
+          "src": "/images/the-balance/mortgage.webp"
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "size": "large",
+      "images": [
+        {
+          "src": "/images/the-balance/article1.jpg",
+          "grow": "1"
+        },
+        {
+          "src": "/images/the-balance/article2.png",
+          "grow": "1"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "content": "<span class=\"eyebrow\">Social Media</span>I developed a number of templates for My Two Cents to highlight its headlines and images. <br><br>I also adopted a social media strategy that emphasized content that could be natively shared within the app, as opposed to through a link in bio."
+    },
+    {
+      "type": "image",
+      "size": "large",
+      "images": [
+        {
+          "src": "/images/the-balance/frames.png",
+          "grow": "1"
+        }
+      ]
+    }
   ]
 }

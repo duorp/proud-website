@@ -10,7 +10,7 @@
   "blocks": [
     {
       "type": "custom",
-      "content": "ICA8ZGl2IGNsYXNzPSJzd2lwZXIgbXlTd2lwZXIiPgogICAgPGRpdiBjbGFzcz0ic3dpcGVyLXdyYXBwZXIiPgogICAgICA8ZGl2IGNsYXNzPSJzd2lwZXItc2xpZGUiPjxpbWcgc3JjPSIvaW1hZ2VzL3VuY292ZXItQUlHQS9Mb3ctTGFuZGluZy5naWYiPjwvZGl2PgogICAgICA8ZGl2IGNsYXNzPSJzd2lwZXItc2xpZGUiPjxpbWcgc3JjPSIvaW1hZ2VzL3VuY292ZXItQUlHQS9ob21lLmdpZiI+PC9kaXY+CiAgICAgIDxkaXYgY2xhc3M9InN3aXBlci1zbGlkZSI+PGltZyBzcmM9Ii9pbWFnZXMvdW5jb3Zlci1BSUdBL2RhdGEuZ2lmIj48L2Rpdj4KICAgICAgPGRpdiBjbGFzcz0ic3dpcGVyLXNsaWRlIj48aW1nIHNyYz0iL2ltYWdlcy91bmNvdmVyLUFJR0Evc3Rvcmllcy5naWYiPjwvZGl2PgoKICAgIDwvZGl2PgogICAgPGRpdiBjbGFzcz0ic3dpcGVyLXBhZ2luYXRpb24iPjwvZGl2PgogIDwvZGl2Pg=="
+      "content": "  <div class=\"swiper mySwiper\" data-space-between=\"16\">\n    <div class=\"swiper-wrapper\">\n      <div class=\"swiper-slide\"><img src=\"/images/uncover-AIGA/Low-Landing.gif\"></div>\n      <div class=\"swiper-slide\"><img src=\"/images/uncover-AIGA/home.gif\"></div>\n      <div class=\"swiper-slide\"><img src=\"/images/uncover-AIGA/data.gif\"></div>\n      <div class=\"swiper-slide\"><img src=\"/images/uncover-AIGA/stories.gif\"></div>\n\n    </div>\n  </div>"
     }
   ]
 }

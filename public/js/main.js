@@ -138,7 +138,7 @@ char.style.transform = `translate(${tx}px, ${ty}px) scale(1.3)`;
 document.querySelectorAll(".mySwiper").forEach((el) => {
   new Swiper(el, {
     slidesPerView: "auto",
-    spaceBetween: -4,
+    spaceBetween: Number(el.dataset.spaceBetween ?? -4),  // per-swiper override, default -4
     slideToClickedSlide: true,
     loop: true,
     navigation: {
@@ -147,6 +147,8 @@ document.querySelectorAll(".mySwiper").forEach((el) => {
     },
   });
 });
+
+
 
 //HELPER FUNCTIONS
     
