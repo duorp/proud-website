@@ -1,5 +1,5 @@
 module.exports = [
-  {   type: "c",
+  {   type: "p",
     slug: "grimshaw-pursuits",
     title: "Editoral Design For Architectural Proposals",
     subtitle: "Proposals I designed under Grimshaw's business development team.",
